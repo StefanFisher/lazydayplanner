@@ -1,10 +1,11 @@
 Lazydayplanner::Application.routes.draw do
-  get "welcome/index"
+  get "movies/index"
+  #get "welcome/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'welcome#index'
+  #root 'welcome#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -54,4 +55,13 @@ Lazydayplanner::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+#resources
+#:movies
+
+root to: "welcome#index"
+
+get '/movies' => "movies#index"
+get '/movies/new' => "movies#new"
+
 end
