@@ -1,5 +1,5 @@
 Lazydayplanner::Application.routes.draw do
-  get "movies/index"
+  #get "movies/index"
   #get "welcome/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -56,8 +56,7 @@ Lazydayplanner::Application.routes.draw do
   #     resources :products
   #   end
 
-#resources
-#:movies
+resources :movies
 
 root to: "welcome#index"
 
