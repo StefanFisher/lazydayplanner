@@ -2,3 +2,17 @@
 <p>Find me in app/views/movies/index.html.erb</p>
 
 <p>Add a new movie <a href="/movies/new">Here</a>
+
+<table border="1">
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+ 
+  <% @movies.each do |movie| %>
+    <tr>
+      <td><%= movie.title %></td>
+      <td><%= movie.text %></td>
+    </tr>
+  <% end %>
+</table>

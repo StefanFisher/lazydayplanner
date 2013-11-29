@@ -758,3 +758,72 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-29 01:41:33
 
 
 Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-11-29 01:41:33 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-11-29 01:57:14 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 59ms (Views: 45.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-29 01:57:14 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-11-29 01:57:14 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-11-29 01:57:14 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-29 01:57:14 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-29 01:57:14 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-29 01:57:14 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-11-29 01:57:14 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-11-29 01:57:14 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-29 01:57:14 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-11-29 01:58:33 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-29 01:58:33 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-29 01:58:33 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-29 01:58:33 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-11-29 01:58:33 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-11-29 01:58:33 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-11-29 01:58:33 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-29 01:58:33 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-11-29 01:58:33 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-29 01:58:33 -0500
