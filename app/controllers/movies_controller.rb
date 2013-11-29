@@ -6,14 +6,20 @@ class MoviesController < ApplicationController
   end
 
   def new
+  	#sends the movie objest back to new if the validation fails
+  	@movie = Movie.new
   end
 
   def create
 
   	#render text: params[:movie].inspect
   	@movie = Movie.new(movie_params)
-  	@movie.save
-  	redirect_to @movie
+  	#if statement determines whether to save the entry or send back to user
+  	if @movie.save
+  		redirect_to @movie
+  	else
+  		render 'new'
+  	end
 
   end
 
@@ -22,6 +28,23 @@ class MoviesController < ApplicationController
   	@movie = Movie.find(params[:id])
 
   end
+
+  def edit
+
+  	@movie = Movie.find(params[:id])
+
+  end
+
+  def update
+  @movie = Movie.find(params[:id])
+ 
+  if @movie.update(params[:movie].permit(:title, :text))
+    redirect_to @movie
+  else
+    render 'edit'
+  end
+end
+
 
   private
 
