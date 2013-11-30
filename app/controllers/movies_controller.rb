@@ -45,6 +45,13 @@ class MoviesController < ApplicationController
   end
 end
 
+def destroy
+  @movie = Movie.find(params[:id])
+  @movie.destroy
+ 	#since we are redirecting to the index we don;t need to create a view
+  redirect_to movies_path
+end
+
 
   private
 
