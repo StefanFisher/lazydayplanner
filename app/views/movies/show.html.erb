@@ -12,17 +12,17 @@
 <% @movie.comments.each do |comment| %>
 	<p>
 		<strong>Commenter:</strong>
-		<% comment.commenter %>
+		<%= comment.commenter %>
 	</p>
 	<p>
 		<strong>Comment:</strong>
-		<% comment.body %>
+		<%= comment.body %>
 	</p>
 	<% end %>
 
 
 <h2>Add a comment:</h2>
-<%= for_for([@movie,@movie.comments.build]) do |f| %>
+<%= form_for([@movie,@movie.comments.build]) do |f| %>
 <p><%= f.label :commenter %><br />
 	<%= f.text_field :commenter %>
 </p>
