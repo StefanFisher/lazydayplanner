@@ -3333,3 +3333,246 @@ Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-01 14:56:52 -05
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-01 14:56:52 -0500
+
+
+Started POST "/movies/1/comments" for 127.0.0.1 at 2013-12-01 15:34:52 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1Kr69yNpQzuRvRqHgmZ6nj7YYAxQhXXxiQKGReehhnI=", "comment"=>{"commenter"=>"Stefan", "body"=>"second comment"}, "commit"=>"Create Comment", "movie_id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "comments" ("body", "commenter", "created_at", "movie_id", "updated_at") VALUES (?, ?, ?, ?, ?)  [["body", "second comment"], ["commenter", "Stefan"], ["created_at", Sun, 01 Dec 2013 20:34:52 UTC +00:00], ["movie_id", 1], ["updated_at", Sun, 01 Dec 2013 20:34:52 UTC +00:00]]
+  [1m[36m (107.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/movies/1
+Completed 302 Found in 144ms (ActiveRecord: 109.9ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2013-12-01 15:34:53 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered movies/show.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `comments' for nil:NilClass):
+     9: </p>
+    10: 
+    11: <h2>Comments</h2>
+    12: <%= render @post.comments %>
+    13: 
+    14: <h2>Add a comment:</h2>
+    15: <%= render "comments/form" %>
+  app/views/movies/show.html.erb:12:in `_app_views_movies_show_html_erb___394837196162274443_69899087335260'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.6ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2013-12-01 15:36:34 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered movies/show.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `comments' for nil:NilClass):
+     9: </p>
+    10: 
+    11: <h2>Comments</h2>
+    12: <%= render @post.comments %>
+    13: 
+    14: <h2>Add a comment:</h2>
+    15: <%= render "comments/form" %>
+  app/views/movies/show.html.erb:12:in `_app_views_movies_show_html_erb___394837196162274443_69899087335260'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.3ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-12-01 15:36:42 -0500
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 46ms (Views: 44.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-01 15:36:42 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-01 15:36:42 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-01 15:36:42 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-01 15:36:42 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-01 15:36:42 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-01 15:36:42 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-01 15:36:42 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-01 15:36:42 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-01 15:36:42 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-01 15:36:42 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-01 15:36:42 -0500
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2013-12-01 15:36:44 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered movies/show.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `comments' for nil:NilClass):
+     9: </p>
+    10: 
+    11: <h2>Comments</h2>
+    12: <%= render @post.comments %>
+    13: 
+    14: <h2>Add a comment:</h2>
+    15: <%= render "comments/form" %>
+  app/views/movies/show.html.erb:12:in `_app_views_movies_show_html_erb___394837196162274443_69899085037060'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.0ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2013-12-01 15:36:44 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered movies/show.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (undefined method `comments' for nil:NilClass):
+     9: </p>
+    10: 
+    11: <h2>Comments</h2>
+    12: <%= render @post.comments %>
+    13: 
+    14: <h2>Add a comment:</h2>
+    15: <%= render "comments/form" %>
+  app/views/movies/show.html.erb:12:in `_app_views_movies_show_html_erb___394837196162274443_69899087335260'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.8ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2013-12-01 15:37:13 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."movie_id" = ?  [["movie_id", 1]]
+  Rendered comments/_comment.html.erb (0.4ms)
+  Rendered comments/_form.html.erb (32.6ms)
+  Rendered movies/show.html.erb within layouts/application (41.0ms)
+Completed 200 OK in 50ms (Views: 45.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-01 15:37:13 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-01 15:37:13 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-01 15:37:13 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-01 15:37:13 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-01 15:37:13 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-01 15:37:13 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-01 15:37:13 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-01 15:37:13 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-01 15:37:13 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-01 15:37:13 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-01 15:37:13 -0500
+
+
+Started POST "/movies/1/comments" for 127.0.0.1 at 2013-12-01 15:37:24 -0500
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1Kr69yNpQzuRvRqHgmZ6nj7YYAxQhXXxiQKGReehhnI=", "comment"=>{"commenter"=>"Stefan", "body"=>"third comment"}, "commit"=>"Create Comment", "movie_id"=>"1"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "comments" ("body", "commenter", "created_at", "movie_id", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "third comment"], ["commenter", "Stefan"], ["created_at", Sun, 01 Dec 2013 20:37:24 UTC +00:00], ["movie_id", 1], ["updated_at", Sun, 01 Dec 2013 20:37:24 UTC +00:00]]
+  [1m[35m (131.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/movies/1
+Completed 302 Found in 141ms (ActiveRecord: 132.2ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2013-12-01 15:37:24 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."movie_id" = ?  [["movie_id", 1]]
+  Rendered comments/_comment.html.erb (0.1ms)
+  Rendered comments/_form.html.erb (1.3ms)
+  Rendered movies/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-01 15:37:24 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-01 15:37:24 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-01 15:37:24 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-01 15:37:24 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-01 15:37:24 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-01 15:37:24 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-01 15:37:24 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-01 15:37:24 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-01 15:37:24 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-01 15:37:24 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-01 15:37:24 -0500
