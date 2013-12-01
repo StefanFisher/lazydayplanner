@@ -8,6 +8,33 @@
   <%= @movie.text %>
 </p>
 
+<h2>Comments</h2>
+<% @movie.comments.each do |comment| %>
+	<p>
+		<strong>Commenter:</strong>
+		<% comment.commenter %>
+	</p>
+	<p>
+		<strong>Comment:</strong>
+		<% comment.body %>
+	</p>
+	<% end %>
+
+
+<h2>Add a comment:</h2>
+<%= for_for([@movie,@movie.comments.build]) do |f| %>
+<p><%= f.label :commenter %><br />
+	<%= f.text_field :commenter %>
+</p>
+<p>
+    <%= f.label :body %><br />
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
 <p><%= link_to "Look at Movies", movies_path %></p>
 <p><%= link_to 'Edit', edit_movie_path(@movie) %></p>
 <p>Add a new movie <%= link_to "HERE", movies_new_path %></p>
