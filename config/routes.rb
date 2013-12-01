@@ -56,7 +56,9 @@ Lazydayplanner::Application.routes.draw do
   #     resources :products
   #   end
 
-resources :movies
+resources :movies do
+  resources :comments
+end
 
 root to: "welcome#index"
 
