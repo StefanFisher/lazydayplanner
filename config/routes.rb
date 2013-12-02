@@ -64,5 +64,6 @@ root to: "welcome#index"
 
 get '/movies' => "movies#index"
 get '/movies/new' => "movies#new"
+get '/search' => "movies#search"
 
 end

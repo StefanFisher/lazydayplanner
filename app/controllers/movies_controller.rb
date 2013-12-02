@@ -1,4 +1,7 @@
 class MoviesController < ApplicationController
+  include APISearch
+  #http_basic_authenticate_with name: "dhh", password: "secret", except: [:index,:show]
+
   def index
 
   	@movies = Movie.all
@@ -51,6 +54,12 @@ def destroy
  	#since we are redirecting to the index we don;t need to create a view
   redirect_to movies_path
 end
+
+def search
+
+  @search = titlesearch(params[:title])
+
+  end
 
 
   private
