@@ -33,7 +33,7 @@ class MoviesController < ApplicationController
   def show
   	#instance variables get passed to the new
   	@movie = Movie.find(params[:id])
-
+    @search = APISearch.new(@movie.title)
   end
 
   def edit

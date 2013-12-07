@@ -6469,3 +6469,416 @@ Processing by MoviesController#index as HTML
   [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
   Rendered movies/index.html.erb within layouts/application (5.1ms)
 Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2013-12-07 00:41:46 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (9.2ms)
+  Rendered movies/new.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 68ms (Views: 52.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 00:41:46 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 00:41:46 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 00:41:46 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 00:41:46 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 00:41:46 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 00:41:46 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 00:41:46 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 00:41:46 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 00:41:46 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 00:41:46 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 00:41:46 -0500
+
+
+Started POST "/movies" for 127.0.0.1 at 2013-12-07 00:41:55 -0500
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "movie"=>{"title"=>"Wizard of Oz", "text"=>""}, "commit"=>"Create Movie"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (6.3ms)[0m  [1mINSERT INTO "movies" ("created_at", "text", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Sat, 07 Dec 2013 05:42:00 UTC +00:00], ["text", "Dorothy Gale is swept away to a magical land in a tornado and embarks on a quest to see the Wizard who can help her return home."], ["title", "Wizard of Oz"], ["updated_at", Sat, 07 Dec 2013 05:42:00 UTC +00:00]]
+  [1m[35m (120.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/movies/13
+Completed 302 Found in 5380ms (ActiveRecord: 127.2ms)
+
+
+Started GET "/movies/13" for 127.0.0.1 at 2013-12-07 00:42:00 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "13"]]
+  Rendered movies/show.html.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined method `plot_simple' for nil:NilClass):
+     6: <p>
+     7:   <strong>Text:</strong>
+     8:   <%= @movie.text %>
+     9:   <%= @search.plot_simple %>
+    10: </p>
+    11: 
+    12: <h2>Comments</h2>
+  app/views/movies/show.html.erb:9:in `_app_views_movies_show_html_erb___933050530022052510_35132760'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.2ms)
+
+
+Started GET "/movies/13" for 127.0.0.1 at 2013-12-07 00:42:40 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "13"]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."movie_id" = ?[0m  [["movie_id", 13]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (6.3ms)
+  Rendered movies/show.html.erb within layouts/application (45.7ms)
+Completed 200 OK in 5253ms (Views: 50.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 00:42:45 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 00:42:45 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 00:42:45 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 00:42:45 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 00:42:45 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 00:42:45 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 00:42:45 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 00:42:45 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 00:42:45 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 00:42:45 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 00:42:45 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-12-07 00:43:11 -0500
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2013-12-07 00:50:37 -0500
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (6.2ms)
+  Rendered movies/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies" for 127.0.0.1 at 2013-12-07 00:51:33 -0500
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "movie"=>{"title"=>"aristocats", "text"=>""}, "commit"=>"Create Movie"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "text", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sat, 07 Dec 2013 05:51:33 UTC +00:00], ["text", "With the help of a smooth talking tomcat, a family of Parisian felines set to inherit a fortune from their owner try to make it back home after a jealous butler kidnaps them and leaves them in the country."], ["title", "aristocats"], ["updated_at", Sat, 07 Dec 2013 05:51:33 UTC +00:00]]
+  [1m[36m (109.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/movies/14
+Completed 302 Found in 306ms (ActiveRecord: 110.8ms)
+
+
+Started GET "/movies/14" for 127.0.0.1 at 2013-12-07 00:51:33 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "14"]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."movie_id" = ?[0m  [["movie_id", 14]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (5.9ms)
+  Rendered movies/show.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 170ms (Views: 21.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 00:51:33 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 00:51:33 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 00:51:33 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 00:51:33 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 00:51:33 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 00:51:33 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 00:51:33 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 00:51:33 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 00:51:33 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 00:51:33 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 00:51:33 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-12-07 00:51:48 -0500
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2013-12-07 00:52:09 -0500
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (4.1ms)
+  Rendered movies/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies" for 127.0.0.1 at 2013-12-07 00:52:14 -0500
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "movie"=>{"title"=>"professional", "text"=>""}, "commit"=>"Create Movie"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "movies" ("created_at", "text", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sat, 07 Dec 2013 05:52:14 UTC +00:00], ["text", "A frustrated war correspondent, unable to find the war he's been asked to cover, takes the risky path of co-opting the I.D. of a dead arms dealer acquaintance."], ["title", "professional"], ["updated_at", Sat, 07 Dec 2013 05:52:14 UTC +00:00]]
+  [1m[36m (115.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/movies/15
+Completed 302 Found in 488ms (ActiveRecord: 115.9ms)
+
+
+Started GET "/movies/15" for 127.0.0.1 at 2013-12-07 00:52:14 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "15"]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."movie_id" = ?[0m  [["movie_id", 15]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (1.6ms)
+  Rendered movies/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 170ms (Views: 5.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 00:52:15 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 00:52:15 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 00:52:15 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 00:52:15 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 00:52:15 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 00:52:15 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 00:52:15 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 00:52:15 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 00:52:15 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 00:52:15 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 00:52:15 -0500
+
+
+Started GET "/movies/15" for 127.0.0.1 at 2013-12-07 00:53:59 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "15"]]
+  Rendered movies/show.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 159ms
+
+ActionView::Template::Error (undefined method `year' for #<APISearch:0x007f3a445af818>):
+    12: <p>
+    13:   <strong>Year:</strong>
+    14:   <%= @movie.year %>
+    15:   <%= @search.year %>
+    16: </p>
+    17: 
+    18: <h2>Comments</h2>
+  app/views/movies/show.html.erb:15:in `_app_views_movies_show_html_erb___933050530022052510_69944115846180'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.2ms)
+
+
+Started GET "/movies/15" for 127.0.0.1 at 2013-12-07 00:54:24 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "15"]]
+  Rendered movies/show.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 1070ms
+
+ActionView::Template::Error (undefined method `year' for #<APISearch:0x007f3a2406f2b0>):
+    12: <p>
+    13:   <strong>Year:</strong>
+    14:   <%= @movie.year %>
+    15:   <%= @search.year %>
+    16: </p>
+    17: 
+    18: <h2>Comments</h2>
+  app/views/movies/show.html.erb:15:in `_app_views_movies_show_html_erb___933050530022052510_69944115846180'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.0ms)
+
+
+Started GET "/movies/15" for 127.0.0.1 at 2013-12-07 00:54:49 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "15"]]
+  [1m[36mComment Load (4.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."movie_id" = ?[0m  [["movie_id", 15]]
+  Rendered collection (0.1ms)
+  Rendered comments/_form.html.erb (29.8ms)
+  Rendered movies/show.html.erb within layouts/application (47.2ms)
+Completed 200 OK in 284ms (Views: 63.9ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 00:54:49 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 00:54:49 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 00:54:49 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 00:54:49 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 00:54:49 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 00:54:49 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 00:54:49 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 00:54:49 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 00:54:49 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 00:54:49 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 00:54:49 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-12-07 00:56:37 -0500
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2013-12-07 00:56:40 -0500
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (6.6ms)
+  Rendered movies/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies" for 127.0.0.1 at 2013-12-07 00:56:46 -0500
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "movie"=>{"title"=>"The Professional", "text"=>""}, "commit"=>"Create Movie"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.4ms)[0m  INSERT INTO "movies" ("created_at", "text", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sat, 07 Dec 2013 05:56:51 UTC +00:00], ["text", "An arrogant Texas millionaire hires four adventurers to rescue his kidnapped wife from a notorious Mexican bandit."], ["title", "The Professional"], ["updated_at", Sat, 07 Dec 2013 05:56:51 UTC +00:00]]
+  [1m[36m (121.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/movies/16
+Completed 302 Found in 5318ms (ActiveRecord: 124.4ms)
+
+
+Started GET "/movies/16" for 127.0.0.1 at 2013-12-07 00:56:51 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "16"]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."movie_id" = ?[0m  [["movie_id", 16]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (1.8ms)
+  Rendered movies/show.html.erb within layouts/application (32.5ms)
+Completed 200 OK in 200ms (Views: 37.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 00:56:51 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 00:56:51 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 00:56:51 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 00:56:51 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 00:56:51 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 00:56:51 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 00:56:51 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 00:56:51 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 00:56:51 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 00:56:51 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 00:56:51 -0500
