@@ -4,6 +4,12 @@
 <p>Add a new movie <%= link_to "HERE", movies_new_path %></p>
 <p>Go back home <%= link_to "HOME", root_path%></p>
 
+  <%= form_tag :controller => 'movies', :action => 'search' do %>
+      <%= text_field_tag :search %>
+      <%= submit_tag "Search", :name => nil %> 
+      <%= link_to_function "Clear", "$('search_field').clear()" %>
+  <% end %> 
+
 <table border="1">
   <tr>
     <th>Title</th>

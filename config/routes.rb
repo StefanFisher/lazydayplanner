@@ -56,7 +56,11 @@ Lazydayplanner::Application.routes.draw do
   #     resources :products
   #   end
 
+#get '/movies/searchresults', to: "movies#searchresults"
 resources :movies do
+  collection do
+    post 'search'
+  end
   resources :comments
 end
 
@@ -64,6 +68,7 @@ root to: "welcome#index"
 
 get '/movies' => "movies#index"
 get '/movies/new' => "movies#new"
-get '/search' => "movies#search"
+#get '/movies/search', to: "movies#search"
+
 
 end

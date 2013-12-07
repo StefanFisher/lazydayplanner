@@ -33,6 +33,4 @@ class APISearch
 
 	end
 
-
-
 end

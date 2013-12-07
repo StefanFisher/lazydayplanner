@@ -1,5 +1,6 @@
 require "APISearch"
 class MoviesController < ApplicationController
+  include MultiSearch
   #http_basic_authenticate_with name: "dhh", password: "secret", except: [:index,:show]
   def index
 
@@ -51,6 +52,17 @@ class MoviesController < ApplicationController
     render 'edit'
   end
 end
+
+def search
+
+@search = APISearch.new(params[:search])
+
+end
+
+def searchresults
+
+end
+
 
 def destroy
   @movie = Movie.find(params[:id])
