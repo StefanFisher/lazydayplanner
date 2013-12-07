@@ -33,4 +33,11 @@ class APISearch
 
 	end
 
+	def MultiSearch(title,limit=1)
+
+		response_string = HTTParty.get("http://mymovieapi.com/",:query => {:title => title, :limit => limit, :type => 'json'})
+		@response = JSON.parse(response_string)
+
+	end
+
 end

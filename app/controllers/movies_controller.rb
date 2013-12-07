@@ -1,6 +1,5 @@
 require "APISearch"
 class MoviesController < ApplicationController
-  include MultiSearch
   #http_basic_authenticate_with name: "dhh", password: "secret", except: [:index,:show]
   def index
 
@@ -17,12 +16,6 @@ class MoviesController < ApplicationController
 
   	#render text: params[:movie].inspect
   	@movie = Movie.new(movie_params)
-    #search for the movie along side creating it in the DB
-    @search = APISearch.new(@movie.title)
-    #from here we can populate the fields for movie from the APISearch object.
-    #there is a probably a better/more secure way to do this
-    @movie.text = @search.plot_simple
-  	#if statement determines whether to save the entry or send back to user
   	if @movie.save
   		redirect_to @movie
   	else
@@ -34,7 +27,6 @@ class MoviesController < ApplicationController
   def show
   	#instance variables get passed to the new
   	@movie = Movie.find(params[:id])
-    @search = APISearch.new(@movie.title)
   end
 
   def edit
@@ -57,12 +49,9 @@ def search
 
 @search = APISearch.new(params[:search])
 
-end
-
-def searchresults
+@multi = @search.MultiSearch(params[:search],5)
 
 end
-
 
 def destroy
   @movie = Movie.find(params[:id])
@@ -76,7 +65,7 @@ end
 
   def movie_params
 
-  	params.require(:movie).permit(:title,:text)
+  	params.require(:movie).permit(:title,:text, :year)
 
   end
 

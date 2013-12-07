@@ -6,3 +6,41 @@
   <%end%>
   <%end%>
   </ul>
+
+  <%= form_tag :controller => 'movies', :action => 'create', :method =>'get' do %>
+  		<%= hidden_field_tag :title => "#{@search.title}" %>
+      <%= submit_tag "Create", :name => nil %> 
+  <% end %> 
+
+
+
+<script>
+$(document).ready(function() {
+  var par = $('#secret');
+  $(par).hide();
+  
+  $("button").click(function(e){
+    $(par).toggle();
+      e.preventDefault();
+  });
+});
+
+</script>
+
+
+<body>
+
+<button>Toggle</button>
+<div id="secret">
+  <% @multi.each do |x,y| %>
+  <strong>Alt</strong>
+  	<% x.each do |y|  %>
+  	<p>
+  	<ul>
+  		<li> <%= y %> </li>
+  	</ul>
+  </p>
+  	<% end %>
+  <%end%>
+</div>
+</body>
