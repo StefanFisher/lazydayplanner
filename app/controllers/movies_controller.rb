@@ -10,6 +10,12 @@ class MoviesController < ApplicationController
   def new
   	#sends the movie objest back to new if the validation fails
   	@movie = Movie.new
+
+    if params[:search].present?
+      @search = APISearch.new(params[:search])
+      @multi = @search.MultiSearch(params[:search],5)
+    end
+
   end
 
   def create

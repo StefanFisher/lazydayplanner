@@ -59,7 +59,7 @@ Lazydayplanner::Application.routes.draw do
 #get '/movies/searchresults', to: "movies#searchresults"
 resources :movies do
   collection do
-    post 'search'
+    post 'new'
   end
   resources :comments
 end

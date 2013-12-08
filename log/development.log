@@ -15025,3 +15025,3415 @@ ActionController::ParameterMissing (param not found: movie):
   Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
   Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
   Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-07 16:41:15 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 55ms (Views: 42.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 16:41:16 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 16:41:16 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 16:41:16 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 16:41:16 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 16:41:16 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 16:41:16 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 16:41:16 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 16:41:16 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 16:41:16 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 16:41:16 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 16:41:16 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-12-07 16:41:17 -0500
+Processing by MoviesController#index as HTML
+DEPRECATION WARNING: link_to_function is deprecated and will be removed from Rails 4.1. We recommend using Unobtrusive JavaScript instead. See http://guides.rubyonrails.org/working_with_javascript_in_rails.html#unobtrusive-javascript. (called from block in _app_views_movies_index_html_erb___3002480496453266378_69998740378940 at /home/sfisher/lazydayplanner/app/views/movies/index.html.erb:10)
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 20ms (Views: 11.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2013-12-07 16:41:20 -0500
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (6.8ms)
+  Rendered movies/new.html.erb within layouts/application (32.1ms)
+Completed 200 OK in 39ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-07 19:38:34 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 53ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 19:38:35 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 19:38:35 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 19:38:35 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 19:38:35 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 19:38:35 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 19:38:35 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 19:38:35 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 19:38:35 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 19:38:35 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 19:38:35 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 19:38:35 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-12-07 19:38:36 -0500
+Processing by MoviesController#index as HTML
+DEPRECATION WARNING: link_to_function is deprecated and will be removed from Rails 4.1. We recommend using Unobtrusive JavaScript instead. See http://guides.rubyonrails.org/working_with_javascript_in_rails.html#unobtrusive-javascript. (called from block in _app_views_movies_index_html_erb___3534767306531452836_70049508235280 at /home/sfisher/lazydayplanner/app/views/movies/index.html.erb:10)
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 21ms (Views: 11.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-12-07 20:59:38 -0500
+Processing by MoviesController#index as HTML
+DEPRECATION WARNING: link_to_function is deprecated and will be removed from Rails 4.1. We recommend using Unobtrusive JavaScript instead. See http://guides.rubyonrails.org/working_with_javascript_in_rails.html#unobtrusive-javascript. (called from block in _app_views_movies_index_html_erb___3534767306531452836_26292220 at /home/sfisher/lazydayplanner/app/views/movies/index.html.erb:10)
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 20:59:38 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 20:59:38 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 20:59:38 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 20:59:38 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 20:59:38 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 20:59:38 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 20:59:38 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 20:59:38 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 20:59:38 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 20:59:38 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 20:59:38 -0500
+
+
+Started POST "/movies/new" for 127.0.0.1 at 2013-12-07 20:59:43 -0500
+
+ActionController::RoutingError (No route matches [POST] "/movies/new"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/sfisher/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/sfisher/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/sfisher/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (32.2ms)
+
+
+Started POST "/movies/new" for 127.0.0.1 at 2013-12-07 21:00:18 -0500
+
+ActionController::RoutingError (No route matches [POST] "/movies/new"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/sfisher/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/sfisher/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/sfisher/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (22.5ms)
+
+
+Started POST "/movies/new" for 127.0.0.1 at 2013-12-07 21:00:38 -0500
+
+ActionController::RoutingError (No route matches [POST] "/movies/new"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/sfisher/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/sfisher/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/sfisher/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (12.3ms)
+
+
+Started POST "/movies/new" for 127.0.0.1 at 2013-12-07 21:00:53 -0500
+
+ActionController::RoutingError (No route matches [POST] "/movies/new"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/sfisher/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/sfisher/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/sfisher/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (34.3ms)
+
+
+Started POST "/movies/new" for 127.0.0.1 at 2013-12-07 21:01:04 -0500
+
+ActionController::RoutingError (No route matches [POST] "/movies/new"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/sfisher/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/sfisher/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/sfisher/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (17.8ms)
+
+
+Started POST "/movies/new" for 127.0.0.1 at 2013-12-07 21:01:18 -0500
+Processing by MoviesController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "search"=>"fast five"}
+  Rendered movies/_form.html.erb (19.9ms)
+  Rendered movies/new.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 969ms (Views: 28.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 21:01:19 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 21:01:19 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 21:01:19 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 21:01:19 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 21:01:19 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 21:01:19 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 21:01:19 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 21:01:19 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 21:01:19 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 21:01:19 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 21:01:19 -0500
+
+
+Started POST "/movies/new" for 127.0.0.1 at 2013-12-07 21:01:42 -0500
+Processing by MoviesController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "search"=>"fast five"}
+  Rendered movies/_form.html.erb (36.2ms)
+  Rendered movies/new.html.erb within layouts/application (38.9ms)
+Completed 200 OK in 449ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 21:01:42 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 21:01:42 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 21:01:42 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 21:01:42 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 21:01:42 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 21:01:42 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 21:01:42 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 21:01:42 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 21:01:42 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 21:01:42 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 21:01:42 -0500
+
+
+Started POST "/movies/new" for 127.0.0.1 at 2013-12-07 21:01:57 -0500
+Processing by MoviesController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "search"=>"fast five"}
+  Rendered movies/_form.html.erb (4.9ms)
+  Rendered movies/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 525ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 21:01:57 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 21:01:57 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 21:01:57 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 21:01:57 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 21:01:57 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 21:01:57 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 21:01:58 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 21:01:58 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 21:01:58 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 21:01:58 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 21:01:58 -0500
+
+
+Started POST "/movies/new" for 127.0.0.1 at 2013-12-07 21:09:26 -0500
+Processing by MoviesController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "search"=>"fast five"}
+ERROR: compiling _app_views_movies_new_html_erb__723333896795642704_70049508310720 RAISED /home/sfisher/lazydayplanner/app/views/movies/new.html.erb:11: syntax error, unexpected '<', expecting keyword_end
+  <%= form_tag :controller => 'm...
+   ^
+/home/sfisher/lazydayplanner/app/views/movies/new.html.erb:11: syntax error, unexpected ',', expecting keyword_end
+...rm_tag :controller => 'movies', :action => 'create', :method...
+...                               ^
+/home/sfisher/lazydayplanner/app/views/movies/new.html.erb:11: syntax error, unexpected ',', expecting keyword_end
+... 'movies', :action => 'create', :method =>'get' do @output_b...
+...                               ^
+/home/sfisher/lazydayplanner/app/views/movies/new.html.erb:11: syntax error, unexpected keyword_do, expecting keyword_end
+...=> 'create', :method =>'get' do @output_buffer.safe_append='
+...                               ^
+/home/sfisher/lazydayplanner/app/views/movies/new.html.erb:15: syntax error, unexpected keyword_ensure, expecting end-of-input
+Function body:           def _app_views_movies_new_html_erb__723333896795642704_70049508310720(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "movies/new";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='<h1> Form for adding new movies</h1>
+
+';@output_buffer.append=( render 'form' );@output_buffer.safe_append='
+
+<p>';@output_buffer.append=( link_to "Look at Movies", movies_path );@output_buffer.safe_append='</p>
+<p>Add a new movie ';@output_buffer.append=( link_to "HERE", movies_new_path );@output_buffer.safe_append='</p>
+<p>Go back home ';@output_buffer.append=( link_to "HOME", root_path);@output_buffer.safe_append='</p>
+
+';@output_buffer.append=  @search.instance_variables
+
+  <%= form_tag :controller => 'movies', :action => 'create', :method =>'get' do @output_buffer.safe_append='
+      ';@output_buffer.append=( hidden_field_tag :title => "#{@search.title}" );@output_buffer.safe_append='
+      ';@output_buffer.append=( submit_tag "Create", :name => nil );@output_buffer.safe_append=' 
+';@output_buffer.safe_append='  '; end ;@output_buffer.safe_append='  %>';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:299:in `module_eval'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:299:in `compile'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:248:in `block in compile!'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:236:in `synchronize'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:236:in `compile!'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:142:in `block in render'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications.rb:161:in `instrument'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:141:in `render'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `instrument'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/renderer.rb:23:in `render'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/rendering.rb:97:in `render'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/home/sfisher/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/base.rb:189:in `process_action'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:403:in `_run__847583515156608560__process_action__callbacks'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `instrument'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/base.rb:136:in `process'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/rendering.rb:44:in `process'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal.rb:195:in `dispatch'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal.rb:231:in `block in action'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/journey/router.rb:59:in `each'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/journey/router.rb:59:in `call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/routing/route_set.rb:680:in `call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/conditionalget.rb:35:in `call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/query_cache.rb:36:in `call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/migration.rb:369:in `call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:373:in `_run__2179443146035781101__call__callbacks'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.1/lib/rails/rack/logger.rb:38:in `call_app'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.1/lib/rails/rack/logger.rb:20:in `block in call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/tagged_logging.rb:25:in `tagged'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/tagged_logging.rb:67:in `tagged'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.1/lib/rails/rack/logger.rb:20:in `call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/static.rb:64:in `call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.1/lib/rails/engine.rb:511:in `call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.1/lib/rails/application.rb:97:in `call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/home/sfisher/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/home/sfisher/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/home/sfisher/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered movies/new.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 5538ms
+
+ActionView::Template::Error (/home/sfisher/lazydayplanner/app/views/movies/new.html.erb:11: syntax error, unexpected '<', expecting keyword_end
+  <%= form_tag :controller => 'm...
+   ^
+/home/sfisher/lazydayplanner/app/views/movies/new.html.erb:11: syntax error, unexpected ',', expecting keyword_end
+...rm_tag :controller => 'movies', :action => 'create', :method...
+...                               ^
+/home/sfisher/lazydayplanner/app/views/movies/new.html.erb:11: syntax error, unexpected ',', expecting keyword_end
+... 'movies', :action => 'create', :method =>'get' do @output_b...
+...                               ^
+/home/sfisher/lazydayplanner/app/views/movies/new.html.erb:11: syntax error, unexpected keyword_do, expecting keyword_end
+...=> 'create', :method =>'get' do @output_buffer.safe_append='
+...                               ^
+/home/sfisher/lazydayplanner/app/views/movies/new.html.erb:15: syntax error, unexpected keyword_ensure, expecting end-of-input):
+     8: 
+     9: <%= @search.instance_variables
+    10: 
+    11:   <%= form_tag :controller => 'movies', :action => 'create', :method =>'get' do %>
+    12:       <%= hidden_field_tag :title => "#{@search.title}" %>
+    13:       <%= submit_tag "Create", :name => nil %> 
+    14:   <% end %>  %>
+  actionpack (4.0.1) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.1) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.1) lib/action_view/template.rb:248:in `block in compile!'
+  actionpack (4.0.1) lib/action_view/template.rb:236:in `synchronize'
+  actionpack (4.0.1) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.1) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.1) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.1) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.1) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.1) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.1) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.1) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.1) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.1) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.1) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.1) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.1) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/sfisher/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:403:in `_run__847583515156608560__process_action__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__2179443146035781101__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/sfisher/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/sfisher/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/sfisher/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.1ms)
+
+
+Started POST "/movies/new" for 127.0.0.1 at 2013-12-07 21:09:51 -0500
+Processing by MoviesController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "search"=>"fast five"}
+  Rendered movies/_form.html.erb (5.0ms)
+  Rendered movies/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 426ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 21:09:51 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 21:09:51 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 21:09:51 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 21:09:51 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 21:09:51 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 21:09:51 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 21:09:51 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 21:09:51 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 21:09:51 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 21:09:51 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 21:09:51 -0500
+
+
+Started POST "/movies?method=get" for 127.0.0.1 at 2013-12-07 21:09:55 -0500
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "{:title=>\"Fast Five\"}"=>"", "method"=>"get"}
+Completed 400 Bad Request in 1ms
+
+ActionController::ParameterMissing (param not found: movie):
+  app/controllers/movies_controller.rb:72:in `movie_params'
+  app/controllers/movies_controller.rb:22:in `create'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 21:09:58 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 21:09:58 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 21:09:58 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 21:09:58 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 21:09:58 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 21:09:58 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 21:09:58 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 21:09:58 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 21:09:58 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 21:09:58 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 21:09:58 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 21:10:07 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 21:10:07 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 21:10:07 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 21:10:07 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 21:10:07 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 21:10:07 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 21:10:07 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 21:10:07 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 21:10:07 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 21:10:07 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 21:10:07 -0500
+
+
+Started POST "/movies?method=get" for 127.0.0.1 at 2013-12-07 21:12:11 -0500
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "{:title=>\"Fast Five\"}"=>"", "method"=>"get"}
+Completed 400 Bad Request in 1ms
+
+ActionController::ParameterMissing (param not found: movie):
+  app/controllers/movies_controller.rb:72:in `movie_params'
+  app/controllers/movies_controller.rb:22:in `create'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.1ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 21:13:00 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 21:13:00 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 21:13:00 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 21:13:00 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 21:13:00 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 21:13:00 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 21:13:00 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 21:13:00 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 21:13:00 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 21:13:00 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 21:13:00 -0500
+
+
+Started POST "/movies/new" for 127.0.0.1 at 2013-12-07 21:13:03 -0500
+Processing by MoviesController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "search"=>"fast five"}
+  Rendered movies/_form.html.erb (5.0ms)
+  Rendered movies/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 367ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 21:13:04 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 21:13:04 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 21:13:04 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 21:13:04 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 21:13:04 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 21:13:04 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 21:13:04 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 21:13:04 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 21:13:04 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 21:13:04 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 21:13:04 -0500
+
+
+Started POST "/movies?method=get" for 127.0.0.1 at 2013-12-07 21:13:06 -0500
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "{:movie=>nil}"=>"", "{:title=>\"Fast Five\"}"=>"", "method"=>"get"}
+Completed 400 Bad Request in 1ms
+
+ActionController::ParameterMissing (param not found: movie):
+  app/controllers/movies_controller.rb:72:in `movie_params'
+  app/controllers/movies_controller.rb:22:in `create'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.4ms)
+
+
+Started POST "/movies?method=get" for 127.0.0.1 at 2013-12-07 21:29:13 -0500
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "{:movie=>nil}"=>"", "{:title=>\"Fast Five\"}"=>"", "method"=>"get"}
+Completed 400 Bad Request in 2ms
+
+ActionController::ParameterMissing (param not found: movie):
+  app/controllers/movies_controller.rb:72:in `movie_params'
+  app/controllers/movies_controller.rb:22:in `create'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (23.5ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 21:29:30 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 21:29:30 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 21:29:30 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 21:29:30 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 21:29:30 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 21:29:30 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 21:29:30 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 21:29:30 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 21:29:30 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 21:29:30 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 21:29:30 -0500
+
+
+Started POST "/movies/new" for 127.0.0.1 at 2013-12-07 21:29:33 -0500
+Processing by MoviesController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "search"=>"fast five"}
+  Rendered movies/_form.html.erb (5.0ms)
+  Rendered movies/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 5382ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 21:29:39 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 21:29:39 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 21:29:39 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 21:29:39 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 21:29:39 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 21:29:39 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 21:29:39 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 21:29:39 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 21:29:39 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 21:29:39 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 21:29:39 -0500
+
+
+Started POST "/movies?method=post" for 127.0.0.1 at 2013-12-07 21:29:41 -0500
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "{:movie=>#<Movie id: nil, title: nil, text: nil, created_at: nil, updated_at: nil, year: nil>}"=>"", "{:title=>\"Fast Five\"}"=>"", "method"=>"post"}
+Completed 400 Bad Request in 1ms
+
+ActionController::ParameterMissing (param not found: movie):
+  app/controllers/movies_controller.rb:72:in `movie_params'
+  app/controllers/movies_controller.rb:22:in `create'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 21:35:45 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 21:35:45 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 21:35:45 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 21:35:45 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 21:35:45 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 21:35:45 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 21:35:45 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 21:35:45 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 21:35:45 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 21:35:45 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 21:35:45 -0500
+
+
+Started POST "/movies/new" for 127.0.0.1 at 2013-12-07 21:35:47 -0500
+Processing by MoviesController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "search"=>"fast five"}
+  Rendered movies/_form.html.erb (5.2ms)
+  Rendered movies/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 430ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 21:35:48 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 21:35:48 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 21:35:48 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 21:35:48 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 21:35:48 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 21:35:48 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 21:35:48 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 21:35:48 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 21:35:48 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 21:35:48 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 21:35:48 -0500
+
+
+Started POST "/movies?method=get" for 127.0.0.1 at 2013-12-07 21:35:51 -0500
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "{:movie=>#<Movie id: nil, title: nil, text: nil, created_at: nil, updated_at: nil, year: nil>}"=>"", "{:title=>\"Fast Five\"}"=>"", "method"=>"get"}
+Completed 400 Bad Request in 0ms
+
+ActionController::ParameterMissing (param not found: movie):
+  app/controllers/movies_controller.rb:72:in `movie_params'
+  app/controllers/movies_controller.rb:22:in `create'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.2ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 21:37:20 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 21:37:20 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 21:37:20 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 21:37:20 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 21:37:20 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 21:37:20 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 21:37:20 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 21:37:20 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 21:37:20 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 21:37:20 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 21:37:20 -0500
+
+
+Started POST "/movies/new" for 127.0.0.1 at 2013-12-07 21:37:22 -0500
+Processing by MoviesController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "search"=>"fast five"}
+  Rendered movies/_form.html.erb (4.9ms)
+  Rendered movies/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 5381ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 21:37:27 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 21:37:27 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 21:37:28 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 21:37:28 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 21:37:28 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 21:37:28 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 21:37:28 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 21:37:28 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 21:37:28 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 21:37:28 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 21:37:28 -0500
+
+
+Started POST "/movies?method=get" for 127.0.0.1 at 2013-12-07 21:37:29 -0500
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "{:id=>nil}"=>"", "{:title=>\"Fast Five\"}"=>"", "method"=>"get"}
+Completed 400 Bad Request in 1ms
+
+ActionController::ParameterMissing (param not found: movie):
+  app/controllers/movies_controller.rb:72:in `movie_params'
+  app/controllers/movies_controller.rb:22:in `create'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 21:41:37 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 21:41:37 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 21:41:37 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 21:41:37 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 21:41:37 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 21:41:37 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 21:41:37 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 21:41:37 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 21:41:37 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 21:41:37 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 21:41:37 -0500
+
+
+Started POST "/movies/new" for 127.0.0.1 at 2013-12-07 21:41:39 -0500
+Processing by MoviesController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "search"=>"fast five"}
+  Rendered movies/_form.html.erb (5.1ms)
+  Rendered movies/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 10376ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 21:41:49 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 21:41:49 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 21:41:49 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 21:41:49 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 21:41:49 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 21:41:49 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 21:41:49 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 21:41:49 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 21:41:49 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 21:41:49 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 21:41:49 -0500
+
+
+Started POST "/movies?method=get" for 127.0.0.1 at 2013-12-07 21:41:51 -0500
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "{:movie=>#<Movie id: nil, title: nil, text: nil, created_at: nil, updated_at: nil, year: nil>}"=>"", "{:title=>\"Fast Five\"}"=>"", "method"=>"get"}
+Completed 400 Bad Request in 1ms
+
+ActionController::ParameterMissing (param not found: movie):
+  app/controllers/movies_controller.rb:72:in `movie_params'
+  app/controllers/movies_controller.rb:22:in `create'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.1ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 21:43:06 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 21:43:06 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 21:43:06 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 21:43:06 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 21:43:06 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 21:43:06 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 21:43:06 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 21:43:06 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 21:43:06 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 21:43:06 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 21:43:06 -0500
+
+
+Started POST "/movies/new" for 127.0.0.1 at 2013-12-07 21:43:08 -0500
+Processing by MoviesController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "search"=>"fast five"}
+  Rendered movies/_form.html.erb (5.0ms)
+  Rendered movies/new.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 524ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 21:43:08 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 21:43:08 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 21:43:08 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 21:43:08 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 21:43:08 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 21:43:08 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 21:43:08 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 21:43:08 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 21:43:08 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 21:43:08 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 21:43:08 -0500
+
+
+Started POST "/movies?method=get" for 127.0.0.1 at 2013-12-07 21:43:10 -0500
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "movie"=>"{nil=>#<Movie id: nil, title: nil, text: nil, created_at: nil, updated_at: nil, year: nil>}", "{:title=>\"Fast Five\"}"=>"", "method"=>"get"}
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `permit' for #<String:0x007f6b580fb098>):
+  app/controllers/movies_controller.rb:72:in `movie_params'
+  app/controllers/movies_controller.rb:22:in `create'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 21:43:37 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 21:43:37 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 21:43:37 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 21:43:37 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 21:43:37 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 21:43:37 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 21:43:37 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 21:43:37 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 21:43:37 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 21:43:37 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 21:43:37 -0500
+
+
+Started POST "/movies/new" for 127.0.0.1 at 2013-12-07 21:43:39 -0500
+Processing by MoviesController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "search"=>"fast five"}
+  Rendered movies/_form.html.erb (4.9ms)
+  Rendered movies/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 5398ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 21:43:45 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 21:43:45 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 21:43:45 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 21:43:45 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 21:43:45 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 21:43:45 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 21:43:45 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 21:43:45 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 21:43:45 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 21:43:45 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 21:43:45 -0500
+
+
+Started POST "/movies?method=get" for 127.0.0.1 at 2013-12-07 21:43:46 -0500
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "movie"=>"", "{:title=>\"Fast Five\"}"=>"", "method"=>"get"}
+Completed 400 Bad Request in 0ms
+
+ActionController::ParameterMissing (param not found: movie):
+  app/controllers/movies_controller.rb:72:in `movie_params'
+  app/controllers/movies_controller.rb:22:in `create'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 21:44:06 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 21:44:06 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 21:44:06 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 21:44:06 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 21:44:06 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 21:44:06 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 21:44:06 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 21:44:06 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 21:44:06 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 21:44:06 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 21:44:06 -0500
+
+
+Started POST "/movies/new" for 127.0.0.1 at 2013-12-07 21:44:08 -0500
+Processing by MoviesController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "search"=>"fast five"}
+  Rendered movies/_form.html.erb (1.4ms)
+  Rendered movies/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 373ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 21:44:08 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 21:44:08 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 21:44:08 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 21:44:08 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 21:44:08 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 21:44:08 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 21:44:08 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 21:44:08 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 21:44:08 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 21:44:08 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 21:44:08 -0500
+
+
+Started POST "/movies?method=get" for 127.0.0.1 at 2013-12-07 21:44:09 -0500
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "movie"=>"{nil=>nil}", "{:title=>\"Fast Five\"}"=>"", "method"=>"get"}
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `permit' for "{nil=>nil}":String):
+  app/controllers/movies_controller.rb:72:in `movie_params'
+  app/controllers/movies_controller.rb:22:in `create'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 21:44:46 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 21:44:46 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 21:44:46 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 21:44:46 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 21:44:46 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 21:44:46 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 21:44:46 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 21:44:46 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 21:44:46 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 21:44:46 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 21:44:46 -0500
+
+
+Started POST "/movies/new" for 127.0.0.1 at 2013-12-07 21:44:48 -0500
+Processing by MoviesController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "search"=>"fast five"}
+  Rendered movies/_form.html.erb (5.2ms)
+  Rendered movies/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 6439ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 21:44:54 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 21:44:54 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 21:44:54 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 21:44:54 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 21:44:54 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 21:44:54 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 21:44:54 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 21:44:54 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 21:44:54 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 21:44:54 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 21:44:54 -0500
+
+
+Started POST "/movies?method=get" for 127.0.0.1 at 2013-12-07 21:44:55 -0500
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "{:title=>\"Fast Five\"}"=>"", "method"=>"get"}
+Completed 400 Bad Request in 1ms
+
+ActionController::ParameterMissing (param not found: movie):
+  app/controllers/movies_controller.rb:72:in `movie_params'
+  app/controllers/movies_controller.rb:22:in `create'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.2ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 21:45:11 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 21:45:11 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 21:45:11 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 21:45:11 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 21:45:11 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 21:45:11 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 21:45:11 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 21:45:11 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 21:45:11 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 21:45:11 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 21:45:11 -0500
+
+
+Started POST "/movies/new" for 127.0.0.1 at 2013-12-07 21:45:12 -0500
+Processing by MoviesController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "search"=>"fast five"}
+  Rendered movies/_form.html.erb (1.4ms)
+  Rendered movies/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 5343ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 21:45:18 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 21:45:18 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 21:45:18 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 21:45:18 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 21:45:18 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 21:45:18 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 21:45:18 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 21:45:18 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 21:45:18 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 21:45:18 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 21:45:18 -0500
+
+
+Started POST "/movies?method=get" for 127.0.0.1 at 2013-12-07 21:45:38 -0500
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "movie"=>"", "{:title=>\"Fast Five\"}"=>"", "method"=>"get"}
+Completed 400 Bad Request in 1ms
+
+ActionController::ParameterMissing (param not found: movie):
+  app/controllers/movies_controller.rb:72:in `movie_params'
+  app/controllers/movies_controller.rb:22:in `create'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 21:56:27 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 21:56:27 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 21:56:27 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 21:56:27 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 21:56:27 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 21:56:27 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 21:56:27 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 21:56:27 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 21:56:27 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 21:56:27 -0500
+
+
+Started POST "/movies/new" for 127.0.0.1 at 2013-12-07 21:56:30 -0500
+Processing by MoviesController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "search"=>"fast five"}
+  Rendered movies/_form.html.erb (1.5ms)
+  Rendered movies/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 482ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 21:56:30 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 21:56:30 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 21:56:30 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 21:56:30 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 21:56:30 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 21:56:30 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 21:56:30 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 21:56:30 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 21:56:30 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 21:56:30 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 21:56:30 -0500
+
+
+Started POST "/movies?method=get" for 127.0.0.1 at 2013-12-07 21:56:32 -0500
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "movie"=>"{:value=>nil}", "{:title=>\"Fast Five\"}"=>"", "method"=>"get"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `permit' for "{:value=>nil}":String):
+  app/controllers/movies_controller.rb:72:in `movie_params'
+  app/controllers/movies_controller.rb:22:in `create'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 21:57:06 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 21:57:06 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 21:57:06 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 21:57:06 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 21:57:06 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 21:57:06 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 21:57:06 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 21:57:06 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 21:57:06 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 21:57:06 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 21:57:06 -0500
+
+
+Started POST "/movies/new" for 127.0.0.1 at 2013-12-07 21:57:07 -0500
+Processing by MoviesController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "search"=>"fast five"}
+  Rendered movies/_form.html.erb (1.4ms)
+  Rendered movies/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 20362ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 21:57:27 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 21:57:27 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 21:57:27 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 21:57:27 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 21:57:27 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 21:57:27 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 21:57:27 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 21:57:27 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 21:57:27 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 21:57:27 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 21:57:27 -0500
+
+
+Started POST "/movies?method=get" for 127.0.0.1 at 2013-12-07 21:59:44 -0500
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "movie"=>"#<Movie:0x007f6b641da598>", "{:title=>\"Fast Five\"}"=>"", "method"=>"get"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `permit' for "#<Movie:0x007f6b641da598>":String):
+  app/controllers/movies_controller.rb:72:in `movie_params'
+  app/controllers/movies_controller.rb:22:in `create'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 22:03:09 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 22:03:09 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 22:03:09 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 22:03:09 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 22:03:09 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 22:03:09 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 22:03:09 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 22:03:09 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 22:03:09 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 22:03:09 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 22:03:09 -0500
+
+
+Started POST "/movies/new" for 127.0.0.1 at 2013-12-07 22:03:11 -0500
+Processing by MoviesController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "search"=>"fast five"}
+  Rendered movies/_form.html.erb (1.4ms)
+  Rendered movies/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 324ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 22:03:12 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 22:03:12 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 22:03:12 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 22:03:12 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 22:03:12 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 22:03:12 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 22:03:12 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 22:03:12 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 22:03:12 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 22:03:12 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 22:03:12 -0500
+
+
+Started POST "/movies?method=get" for 127.0.0.1 at 2013-12-07 22:03:13 -0500
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "movie"=>"", "{:title=>\"Fast Five\"}"=>"", "method"=>"get"}
+Completed 400 Bad Request in 0ms
+
+ActionController::ParameterMissing (param not found: movie):
+  app/controllers/movies_controller.rb:72:in `movie_params'
+  app/controllers/movies_controller.rb:22:in `create'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 22:03:47 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 22:03:47 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 22:03:47 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 22:03:47 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 22:03:47 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 22:03:47 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 22:03:47 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 22:03:47 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 22:03:47 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 22:03:47 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 22:03:47 -0500
+
+
+Started POST "/movies/new" for 127.0.0.1 at 2013-12-07 22:03:49 -0500
+Processing by MoviesController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "search"=>"fast five"}
+  Rendered movies/_form.html.erb (1.4ms)
+  Rendered movies/new.html.erb within layouts/application (28.4ms)
+Completed 200 OK in 5755ms (Views: 37.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 22:03:54 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 22:03:54 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 22:03:54 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 22:03:54 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 22:03:54 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 22:03:54 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 22:03:54 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 22:03:54 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 22:03:54 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 22:03:54 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 22:03:54 -0500
+
+
+Started POST "/movies?method=get" for 127.0.0.1 at 2013-12-07 22:03:55 -0500
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "movie"=>"{:title=>\"hey\"}", "{:title=>\"Fast Five\"}"=>"", "method"=>"get"}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `permit' for "{:title=>\"hey\"}":String):
+  app/controllers/movies_controller.rb:72:in `movie_params'
+  app/controllers/movies_controller.rb:22:in `create'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 22:06:59 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 22:06:59 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 22:06:59 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 22:06:59 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 22:06:59 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 22:06:59 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 22:06:59 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 22:06:59 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 22:06:59 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 22:06:59 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 22:06:59 -0500
+
+
+Started POST "/movies/new" for 127.0.0.1 at 2013-12-07 22:07:01 -0500
+Processing by MoviesController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "search"=>"fast five"}
+  Rendered movies/_form.html.erb (1.4ms)
+  Rendered movies/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 427ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 22:07:01 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 22:07:01 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 22:07:01 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 22:07:01 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 22:07:01 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 22:07:01 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 22:07:01 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 22:07:01 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 22:07:01 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 22:07:01 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 22:07:01 -0500
+
+
+Started POST "/movies?method=get" for 127.0.0.1 at 2013-12-07 22:07:03 -0500
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "movie"=>"{:title=>\"hey\"}", "{:title=>\"Fast Five\"}"=>"", "method"=>"get"}
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `permit' for "{:title=>\"hey\"}":String):
+  app/controllers/movies_controller.rb:72:in `movie_params'
+  app/controllers/movies_controller.rb:22:in `create'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 22:43:00 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 22:43:00 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 22:43:00 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 22:43:00 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 22:43:00 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 22:43:00 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 22:43:00 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 22:43:00 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 22:43:00 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 22:43:00 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 22:43:00 -0500
+
+
+Started POST "/movies/new" for 127.0.0.1 at 2013-12-07 22:43:01 -0500
+Processing by MoviesController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "search"=>"fast five"}
+  Rendered movies/_form.html.erb (1.5ms)
+  Rendered movies/new.html.erb within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 503ms
+
+ActionView::Template::Error (undefined method `hidden_field_tag' for #<ActionView::Helpers::FormBuilder:0x000000025f2ee8>):
+    15:   <% end %> 
+    16: 
+    17:   <%= form_for @movie, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+    18:   <%= f.hidden_field_tag :title, @search.title %>
+    19:   <%= f.hidden_field_tag :text, @search.plot_simple %>
+    20:   <%= f.submit "Create" %>
+    21: <% end %>
+  app/views/movies/new.html.erb:18:in `block in _app_views_movies_new_html_erb__723333896795642704_70049609074700'
+  app/views/movies/new.html.erb:17:in `_app_views_movies_new_html_erb__723333896795642704_70049609074700'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.3ms)
+
+
+Started POST "/movies/new" for 127.0.0.1 at 2013-12-07 22:57:37 -0500
+Processing by MoviesController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "search"=>"fast five"}
+  Rendered movies/_form.html.erb (5.2ms)
+  Rendered movies/new.html.erb within layouts/application (12.0ms)
+Completed 500 Internal Server Error in 5341ms
+
+ActionView::Template::Error (undefined method `merge' for "Fast Five":String):
+    15:   <% end %> 
+    16: 
+    17:   <%= form_for @movie, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+    18:   <%= f.hidden_field :title, @search.title %>
+    19:   <%= f.hidden_field :text, @search.plot_simple %>
+    20:   <%= f.submit "Create" %>
+    21: <% end %>
+  app/views/movies/new.html.erb:18:in `block in _app_views_movies_new_html_erb__723333896795642704_70049678070480'
+  app/views/movies/new.html.erb:17:in `_app_views_movies_new_html_erb__723333896795642704_70049678070480'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.2ms)
+
+
+Started POST "/movies/new" for 127.0.0.1 at 2013-12-07 22:58:25 -0500
+Processing by MoviesController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "search"=>"fast five"}
+  Rendered movies/_form.html.erb (5.0ms)
+  Rendered movies/new.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 479ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 22:58:26 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 22:58:26 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 22:58:26 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 22:58:26 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 22:58:26 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 22:58:26 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 22:58:26 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 22:58:26 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 22:58:26 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 22:58:26 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 22:58:26 -0500
+
+
+Started POST "/movies" for 127.0.0.1 at 2013-12-07 22:58:28 -0500
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "movie"=>{"title"=>"Fast Five", "text"=>"Dominic Toretto and his crew of street racers plan a massive heist to buy their freedom while in the sights of a powerful Brazilian drug lord and a dangerous federal agent."}, "commit"=>"Create"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "movies" ("created_at", "text", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Sun, 08 Dec 2013 03:58:28 UTC +00:00], ["text", "Dominic Toretto and his crew of street racers plan a massive heist to buy their freedom while in the sights of a powerful Brazilian drug lord and a dangerous federal agent."], ["title", "Fast Five"], ["updated_at", Sun, 08 Dec 2013 03:58:28 UTC +00:00]]
+  [1m[35m (119.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/movies/17
+Completed 302 Found in 125ms (ActiveRecord: 121.3ms)
+
+
+Started GET "/movies/17" for 127.0.0.1 at 2013-12-07 22:58:29 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "17"]]
+  Rendered movies/show.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `plot_simple' for nil:NilClass):
+     6: <p>
+     7:   <strong>Text:</strong>
+     8:   <%= @movie.text %>
+     9:   <%= @search.plot_simple %>
+    10: </p>
+    11: 
+    12: <p>
+  app/views/movies/show.html.erb:9:in `_app_views_movies_show_html_erb___3539160902895993329_26800240'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 23:05:34 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 23:05:34 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 23:05:34 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 23:05:34 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 23:05:34 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 23:05:34 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 23:05:34 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 23:05:34 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 23:05:34 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 23:05:34 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 23:05:34 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-12-07 23:05:38 -0500
+Processing by MoviesController#index as HTML
+DEPRECATION WARNING: link_to_function is deprecated and will be removed from Rails 4.1. We recommend using Unobtrusive JavaScript instead. See http://guides.rubyonrails.org/working_with_javascript_in_rails.html#unobtrusive-javascript. (called from block in _app_views_movies_index_html_erb___3534767306531452836_70049507841320 at /home/sfisher/lazydayplanner/app/views/movies/index.html.erb:10)
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/movies/new" for 127.0.0.1 at 2013-12-07 23:05:57 -0500
+Processing by MoviesController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "search"=>"finding nemo"}
+  Rendered movies/_form.html.erb (3.5ms)
+  Rendered movies/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 354ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 23:05:58 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 23:05:58 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 23:05:58 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 23:05:58 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 23:05:58 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 23:05:58 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 23:05:58 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 23:05:58 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 23:05:58 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 23:05:58 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 23:05:58 -0500
+
+
+Started POST "/movies" for 127.0.0.1 at 2013-12-07 23:06:00 -0500
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "movie"=>{"title"=>"Finding Nemo", "text"=>"After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home."}, "commit"=>"Create"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "movies" ("created_at", "text", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sun, 08 Dec 2013 04:06:00 UTC +00:00], ["text", "After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home."], ["title", "Finding Nemo"], ["updated_at", Sun, 08 Dec 2013 04:06:00 UTC +00:00]]
+  [1m[36m (122.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/movies/18
+Completed 302 Found in 124ms (ActiveRecord: 122.3ms)
+
+
+Started GET "/movies/18" for 127.0.0.1 at 2013-12-07 23:06:00 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "18"]]
+  Rendered movies/show.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `plot_simple' for nil:NilClass):
+     6: <p>
+     7:   <strong>Text:</strong>
+     8:   <%= @movie.text %>
+     9:   <%= @search.plot_simple %>
+    10: </p>
+    11: 
+    12: <p>
+  app/views/movies/show.html.erb:9:in `_app_views_movies_show_html_erb___3539160902895993329_26800240'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.9ms)
+
+
+Started GET "/movies/18" for 127.0.0.1 at 2013-12-07 23:06:58 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "18"]]
+  Rendered movies/show.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `year' for nil:NilClass):
+    11: <p>
+    12:   <strong>Year:</strong>
+    13:   <%= @movie.year %>
+    14:   <%= @search.year %>
+    15: </p>
+    16: 
+    17: <h2>Comments</h2>
+  app/views/movies/show.html.erb:14:in `_app_views_movies_show_html_erb___3539160902895993329_70049507648740'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.3ms)
+
+
+Started GET "/movies/18" for 127.0.0.1 at 2013-12-07 23:07:09 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "18"]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."movie_id" = ?[0m  [["movie_id", 18]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (6.4ms)
+  Rendered movies/show.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 23:07:09 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 23:07:09 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 23:07:09 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 23:07:09 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 23:07:09 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 23:07:09 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 23:07:09 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 23:07:09 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 23:07:09 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 23:07:09 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 23:07:09 -0500
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2013-12-07 23:07:10 -0500
+Processing by MoviesController#new as HTML
+Completed 500 Internal Server Error in 125ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  lib/APISearch.rb:9:in `initialize'
+  app/controllers/movies_controller.rb:14:in `new'
+  app/controllers/movies_controller.rb:14:in `new'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.1ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2013-12-07 23:07:10 -0500
+Processing by MoviesController#new as HTML
+Completed 500 Internal Server Error in 402ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  lib/APISearch.rb:9:in `initialize'
+  app/controllers/movies_controller.rb:14:in `new'
+  app/controllers/movies_controller.rb:14:in `new'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 23:07:25 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 23:07:25 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 23:07:25 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 23:07:25 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 23:07:25 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 23:07:25 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 23:07:25 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 23:07:25 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 23:07:25 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 23:07:25 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 23:07:25 -0500
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2013-12-07 23:07:26 -0500
+Processing by MoviesController#new as HTML
+Completed 500 Internal Server Error in 227ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  lib/APISearch.rb:9:in `initialize'
+  app/controllers/movies_controller.rb:14:in `new'
+  app/controllers/movies_controller.rb:14:in `new'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.2ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2013-12-07 23:07:26 -0500
+Processing by MoviesController#new as HTML
+Completed 500 Internal Server Error in 146ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  lib/APISearch.rb:9:in `initialize'
+  app/controllers/movies_controller.rb:14:in `new'
+  app/controllers/movies_controller.rb:14:in `new'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-07 23:07:38 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 23:07:38 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 23:07:38 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 23:07:38 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 23:07:38 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 23:07:38 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 23:07:38 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 23:07:38 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 23:07:38 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 23:07:38 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 23:07:38 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 23:07:38 -0500
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2013-12-07 23:07:40 -0500
+Processing by MoviesController#new as HTML
+Completed 500 Internal Server Error in 179ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  lib/APISearch.rb:9:in `initialize'
+  app/controllers/movies_controller.rb:14:in `new'
+  app/controllers/movies_controller.rb:14:in `new'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.3ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2013-12-07 23:07:40 -0500
+Processing by MoviesController#new as HTML
+Completed 500 Internal Server Error in 145ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  lib/APISearch.rb:9:in `initialize'
+  app/controllers/movies_controller.rb:14:in `new'
+  app/controllers/movies_controller.rb:14:in `new'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-07 23:09:25 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 23:09:25 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 23:09:25 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 23:09:25 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 23:09:25 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 23:09:25 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 23:09:25 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 23:09:25 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 23:09:25 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 23:09:25 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 23:09:25 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 23:09:25 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-12-07 23:09:26 -0500
+Processing by MoviesController#index as HTML
+DEPRECATION WARNING: link_to_function is deprecated and will be removed from Rails 4.1. We recommend using Unobtrusive JavaScript instead. See http://guides.rubyonrails.org/working_with_javascript_in_rails.html#unobtrusive-javascript. (called from block in _app_views_movies_index_html_erb___3534767306531452836_70049678018120 at /home/sfisher/lazydayplanner/app/views/movies/index.html.erb:10)
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 14ms (Views: 11.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2013-12-07 23:09:33 -0500
+Processing by MoviesController#new as HTML
+Completed 500 Internal Server Error in 142ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  lib/APISearch.rb:9:in `initialize'
+  app/controllers/movies_controller.rb:14:in `new'
+  app/controllers/movies_controller.rb:14:in `new'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.3ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2013-12-07 23:09:33 -0500
+Processing by MoviesController#new as HTML
+Completed 500 Internal Server Error in 200ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  lib/APISearch.rb:9:in `initialize'
+  app/controllers/movies_controller.rb:14:in `new'
+  app/controllers/movies_controller.rb:14:in `new'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.7ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-12-07 23:13:22 -0500
+Processing by MoviesController#index as HTML
+DEPRECATION WARNING: link_to_function is deprecated and will be removed from Rails 4.1. We recommend using Unobtrusive JavaScript instead. See http://guides.rubyonrails.org/working_with_javascript_in_rails.html#unobtrusive-javascript. (called from block in _app_views_movies_index_html_erb___3534767306531452836_70049507841320 at /home/sfisher/lazydayplanner/app/views/movies/index.html.erb:10)
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (30.5ms)
+Completed 200 OK in 36ms (Views: 33.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 23:13:22 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 23:13:22 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 23:13:22 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 23:13:22 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 23:13:22 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 23:13:22 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 23:13:22 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 23:13:22 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 23:13:22 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 23:13:22 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 23:13:22 -0500
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2013-12-07 23:13:23 -0500
+Processing by MoviesController#new as HTML
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/movies_controller.rb:14:in `new'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.8ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2013-12-07 23:13:23 -0500
+Processing by MoviesController#new as HTML
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/movies_controller.rb:14:in `new'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-07 23:22:38 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 23:22:38 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 23:22:38 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 23:22:38 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 23:22:38 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 23:22:38 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 23:22:38 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 23:22:38 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 23:22:38 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 23:22:38 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 23:22:38 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 23:22:38 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-12-07 23:22:39 -0500
+Processing by MoviesController#index as HTML
+DEPRECATION WARNING: link_to_function is deprecated and will be removed from Rails 4.1. We recommend using Unobtrusive JavaScript instead. See http://guides.rubyonrails.org/working_with_javascript_in_rails.html#unobtrusive-javascript. (called from block in _app_views_movies_index_html_erb___3534767306531452836_70049678018120 at /home/sfisher/lazydayplanner/app/views/movies/index.html.erb:10)
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (31.1ms)
+Completed 200 OK in 37ms (Views: 33.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2013-12-07 23:22:40 -0500
+Processing by MoviesController#new as HTML
+Completed 500 Internal Server Error in 2ms
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/movies_controller.rb:14:in `new'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.2ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2013-12-07 23:22:40 -0500
+Processing by MoviesController#new as HTML
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/movies_controller.rb:14:in `new'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.1ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-12-07 23:23:04 -0500
+Processing by MoviesController#index as HTML
+DEPRECATION WARNING: link_to_function is deprecated and will be removed from Rails 4.1. We recommend using Unobtrusive JavaScript instead. See http://guides.rubyonrails.org/working_with_javascript_in_rails.html#unobtrusive-javascript. (called from block in _app_views_movies_index_html_erb___3534767306531452836_70049507841320 at /home/sfisher/lazydayplanner/app/views/movies/index.html.erb:10)
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 23:23:04 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 23:23:04 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 23:23:04 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 23:23:04 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 23:23:04 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 23:23:04 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 23:23:04 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 23:23:04 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 23:23:04 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 23:23:04 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 23:23:04 -0500
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2013-12-07 23:23:06 -0500
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (1.8ms)
+  Rendered movies/new.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    10: 
+    11:   <%= form_tag :controller => 'movies', :action => 'create', :method =>'get' do %>
+    12:   		<%= hidden_field_tag :movie, :title => "hey" %>
+    13:       <%= hidden_field_tag :title => "#{@search.title}" %>
+    14:       <%= submit_tag "Create", :name => nil %> 
+    15:   <% end %> 
+    16: 
+  app/views/movies/new.html.erb:13:in `block in _app_views_movies_new_html_erb__723333896795642704_70049543083200'
+  app/views/movies/new.html.erb:11:in `_app_views_movies_new_html_erb__723333896795642704_70049543083200'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.7ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2013-12-07 23:23:06 -0500
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (1.3ms)
+  Rendered movies/new.html.erb within layouts/application (24.6ms)
+Completed 500 Internal Server Error in 26ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    10: 
+    11:   <%= form_tag :controller => 'movies', :action => 'create', :method =>'get' do %>
+    12:   		<%= hidden_field_tag :movie, :title => "hey" %>
+    13:       <%= hidden_field_tag :title => "#{@search.title}" %>
+    14:       <%= submit_tag "Create", :name => nil %> 
+    15:   <% end %> 
+    16: 
+  app/views/movies/new.html.erb:13:in `block in _app_views_movies_new_html_erb__723333896795642704_70049508033560'
+  app/views/movies/new.html.erb:11:in `_app_views_movies_new_html_erb__723333896795642704_70049508033560'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-07 23:25:11 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 23:25:11 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 23:25:11 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 23:25:11 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 23:25:11 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 23:25:11 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 23:25:11 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 23:25:11 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 23:25:11 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 23:25:11 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 23:25:11 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 23:25:11 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-12-07 23:25:13 -0500
+Processing by MoviesController#index as HTML
+DEPRECATION WARNING: link_to_function is deprecated and will be removed from Rails 4.1. We recommend using Unobtrusive JavaScript instead. See http://guides.rubyonrails.org/working_with_javascript_in_rails.html#unobtrusive-javascript. (called from block in _app_views_movies_index_html_erb___3534767306531452836_70049678018120 at /home/sfisher/lazydayplanner/app/views/movies/index.html.erb:10)
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2013-12-07 23:25:14 -0500
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (1.3ms)
+  Rendered movies/new.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+     9: <%= @search.instance_variables %>
+    10: 
+    11:   <%= form_for @movie, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+    12:   <%= f.hidden_field :title, :value => @search.title %>
+    13:   <%= f.hidden_field :text, :value => @search.plot_simple %>
+    14:   <%= f.submit "Create" %>
+    15: <% end %>
+  app/views/movies/new.html.erb:12:in `block in _app_views_movies_new_html_erb__723333896795642704_70049508161480'
+  app/views/movies/new.html.erb:11:in `_app_views_movies_new_html_erb__723333896795642704_70049508161480'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.9ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2013-12-07 23:25:14 -0500
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (1.4ms)
+  Rendered movies/new.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+     9: <%= @search.instance_variables %>
+    10: 
+    11:   <%= form_for @movie, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+    12:   <%= f.hidden_field :title, :value => @search.title %>
+    13:   <%= f.hidden_field :text, :value => @search.plot_simple %>
+    14:   <%= f.submit "Create" %>
+    15: <% end %>
+  app/views/movies/new.html.erb:12:in `block in _app_views_movies_new_html_erb__723333896795642704_70049542523460'
+  app/views/movies/new.html.erb:11:in `_app_views_movies_new_html_erb__723333896795642704_70049542523460'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-07 23:56:46 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-12-07 23:56:47 -0500
+Processing by MoviesController#index as HTML
+DEPRECATION WARNING: link_to_function is deprecated and will be removed from Rails 4.1. We recommend using Unobtrusive JavaScript instead. See http://guides.rubyonrails.org/working_with_javascript_in_rails.html#unobtrusive-javascript. (called from block in _app_views_movies_index_html_erb___3534767306531452836_70049678018120 at /home/sfisher/lazydayplanner/app/views/movies/index.html.erb:10)
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2013-12-07 23:56:48 -0500
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (1.3ms)
+  Rendered movies/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies" for 127.0.0.1 at 2013-12-07 23:57:00 -0500
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "movie"=>{"title"=>"Test1", "text"=>"sdfsdgdsfhdsfh"}, "commit"=>"Create Movie"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "text", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Sun, 08 Dec 2013 04:57:00 UTC +00:00], ["text", "sdfsdgdsfhdsfh"], ["title", "Test1"], ["updated_at", Sun, 08 Dec 2013 04:57:00 UTC +00:00]]
+  [1m[35m (149.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/movies/19
+Completed 302 Found in 153ms (ActiveRecord: 149.6ms)
+
+
+Started GET "/movies/19" for 127.0.0.1 at 2013-12-07 23:57:00 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "19"]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."movie_id" = ?  [["movie_id", 19]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (5.7ms)
+  Rendered movies/show.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 23:57:00 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-07 23:57:00 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-07 23:57:00 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-07 23:57:00 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-07 23:57:00 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-07 23:57:00 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-07 23:57:00 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-07 23:57:00 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-07 23:57:00 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-07 23:57:00 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 23:57:00 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-12-08 00:00:48 -0500
+Processing by MoviesController#index as HTML
+DEPRECATION WARNING: link_to_function is deprecated and will be removed from Rails 4.1. We recommend using Unobtrusive JavaScript instead. See http://guides.rubyonrails.org/working_with_javascript_in_rails.html#unobtrusive-javascript. (called from block in _app_views_movies_index_html_erb___3534767306531452836_70049678018120 at /home/sfisher/lazydayplanner/app/views/movies/index.html.erb:10)
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/movies/new" for 127.0.0.1 at 2013-12-08 00:01:13 -0500
+
+ActionController::RoutingError (No route matches [POST] "/movies/new"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/sfisher/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/sfisher/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/sfisher/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (12.1ms)
+
+
+Started GET "/movies/19" for 127.0.0.1 at 2013-12-08 00:02:18 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "19"]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."movie_id" = ?[0m  [["movie_id", 19]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (5.7ms)
+  Rendered movies/show.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 43ms (Views: 36.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-12-08 00:02:20 -0500
+Processing by MoviesController#index as HTML
+DEPRECATION WARNING: link_to_function is deprecated and will be removed from Rails 4.1. We recommend using Unobtrusive JavaScript instead. See http://guides.rubyonrails.org/working_with_javascript_in_rails.html#unobtrusive-javascript. (called from block in _app_views_movies_index_html_erb___3534767306531452836_70049678018120 at /home/sfisher/lazydayplanner/app/views/movies/index.html.erb:10)
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2013-12-08 00:02:22 -0500
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (4.4ms)
+  Rendered movies/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-12-08 00:02:27 -0500
+Processing by MoviesController#index as HTML
+DEPRECATION WARNING: link_to_function is deprecated and will be removed from Rails 4.1. We recommend using Unobtrusive JavaScript instead. See http://guides.rubyonrails.org/working_with_javascript_in_rails.html#unobtrusive-javascript. (called from block in _app_views_movies_index_html_erb___3534767306531452836_70049678018120 at /home/sfisher/lazydayplanner/app/views/movies/index.html.erb:10)
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-08 00:02:28 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-12-08 00:02:29 -0500
+Processing by MoviesController#index as HTML
+DEPRECATION WARNING: link_to_function is deprecated and will be removed from Rails 4.1. We recommend using Unobtrusive JavaScript instead. See http://guides.rubyonrails.org/working_with_javascript_in_rails.html#unobtrusive-javascript. (called from block in _app_views_movies_index_html_erb___3534767306531452836_70049678018120 at /home/sfisher/lazydayplanner/app/views/movies/index.html.erb:10)
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/movies/new" for 127.0.0.1 at 2013-12-08 00:02:34 -0500
+
+ActionController::RoutingError (No route matches [POST] "/movies/new"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/sfisher/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/sfisher/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/sfisher/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.7ms)
+  Rendered /home/sfisher/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (12.6ms)
+
+
+Started POST "/movies/new" for 127.0.0.1 at 2013-12-08 00:02:48 -0500
+Processing by MoviesController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "search"=>"Stargate"}
+  Rendered movies/_form.html.erb (37.6ms)
+  Rendered movies/new.html.erb within layouts/application (41.2ms)
+Completed 200 OK in 666ms (Views: 46.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-08 00:02:49 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-08 00:02:49 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-08 00:02:49 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-08 00:02:49 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-08 00:02:49 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-08 00:02:49 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-08 00:02:49 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-08 00:02:49 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-08 00:02:49 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-08 00:02:49 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-08 00:02:49 -0500
+
+
+Started POST "/movies" for 127.0.0.1 at 2013-12-08 00:03:12 -0500
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAGHjODC7MHUaxHQpvl5vuP7C8UGX8I8QHTFDQJlho=", "movie"=>{"title"=>"Stargate", "text"=>"An interstellar teleportation device, found in Egypt, leads to a planet with humans resembling ancient Egyptians who worship the god Ra."}, "commit"=>"Create"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "movies" ("created_at", "text", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sun, 08 Dec 2013 05:03:12 UTC +00:00], ["text", "An interstellar teleportation device, found in Egypt, leads to a planet with humans resembling ancient Egyptians who worship the god Ra."], ["title", "Stargate"], ["updated_at", Sun, 08 Dec 2013 05:03:12 UTC +00:00]]
+  [1m[36m (109.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/movies/20
+Completed 302 Found in 113ms (ActiveRecord: 109.3ms)
+
+
+Started GET "/movies/20" for 127.0.0.1 at 2013-12-08 00:03:12 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "20"]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."movie_id" = ?[0m  [["movie_id", 20]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (4.9ms)
+  Rendered movies/show.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-08 00:03:13 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-12-08 00:03:13 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-08 00:03:13 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-08 00:03:13 -0500
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-08 00:03:13 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-08 00:03:13 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-08 00:03:13 -0500
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-08 00:03:13 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-12-08 00:03:13 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-08 00:03:13 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-08 00:03:13 -0500
