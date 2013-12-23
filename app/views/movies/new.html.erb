@@ -2,16 +2,7 @@
 
 <%= render 'form' %>
 
-<p><%= link_to "Look at Movies", movies_path %></p>
+<p><%= link_to "Look at Movies", '/movies' %></p>
 <p>Add a new movie <%= link_to "HERE", movies_new_path %></p>
 <p>Go back home <%= link_to "HOME", root_path%></p>
 
-<% if params[:search].present? %>
-<%= @search.instance_variables %>
-
-  <%= form_for @movie, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
-  <%= f.hidden_field :title, :value => @search.title %>
-  <%= f.hidden_field :text, :value => @search.plot_simple %>
-  <%= f.submit "Create" %>
-<% end %>
-<% end %>

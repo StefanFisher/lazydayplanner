@@ -12,8 +12,8 @@ class MoviesController < ApplicationController
   	@movie = Movie.new
 
     if params[:search].present?
-      @search = APISearch.new(params[:search])
-      @multi = @search.MultiSearch(params[:search],5)
+      search
+      render 'search'
     end
 
   end
@@ -52,6 +52,8 @@ class MoviesController < ApplicationController
 end
 
 def search
+
+@movie = Movie.new
 
 @search = APISearch.new(params[:search])
 

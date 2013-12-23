@@ -1,16 +1,29 @@
- 
-  <ul>
-  	<% @search.instance_values.each do |x| %>
-  	<% if x[0] != 'response' then %>
-  <li><%= x  %></li>
-  <%end%>
-  <%end%>
-  </ul>
+<H1>Search Results</h1>
 
-  <%= form_tag :controller => 'movies', :action => 'create', :method =>'get' do %>
-  		<%= hidden_field_tag :title => "#{@search.title}" %>
-      <%= submit_tag "Create", :name => nil %> 
-  <% end %> 
+<% if params[:search].present? %>
+<p><b>Title:</b> <%= @search.title %></p>
+<p><b>Year:</b> <%= @search.year %></p>
+<p><b>Actors:</b> <%= @search.actors %></p>
+<p><b>Directors:</b> <%= @search.directors %></p>
+<p><b>Film Location:</b> <%= @search.film_location %></p>
+<p><b>Genre:</b> <%= @search.genre %></p>
+<p><b>Rated:</b> <%= @search.rated %></p>
+<p><b>IMDB Rating:</b> <%= @search.rating %></p>
+<p><b>Simple Plot:</b> <%= @search.plot_simple %></p>
+<p><b>Runtime:</b> <%= @search.runtime %></p>
+<p><b>Release Date:</b> <%= @search.release_date %></p>
+<p><%= image_tag @search.poster['imdb'] %></p>
+<p><b>Poster Link:</b> <%= @search.poster['imdb']%></p>
+<p><b>Cover Link:</b> <%= @search.poster['cover']%></p>
+
+
+  <%= form_for @movie, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+  <%= f.hidden_field :title, :value => @search.title %>
+  <%= f.hidden_field :year, :value => @search.year %>
+  <%= f.hidden_field :text, :value => @search.plot_simple %>
+  <%= f.submit "Create" %>
+<% end %>
+<% end %>
 
 
 
