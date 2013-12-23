@@ -1,41 +1,8 @@
 <H1>Search Results</h1>
 
-<% if params[:search].present? %>
-<p><b>Title:</b> <%= @search.title %></p>
-<p><b>Year:</b> <%= @search.year %></p>
-<p><b>Actors:</b> <%= @search.actors %></p>
-<p><b>Directors:</b> <%= @search.directors %></p>
-<p><b>Film Location:</b> <%= @search.film_location %></p>
-<p><b>Genre:</b> <%= @search.genre %></p>
-<p><b>Rated:</b> <%= @search.rated %></p>
-<p><b>IMDB Rating:</b> <%= @search.rating %></p>
-<p><b>Simple Plot:</b> <%= @search.plot_simple %></p>
-<p><b>Runtime:</b> <%= @search.runtime %></p>
-<p><b>Release Date:</b> <%= @search.release_date %></p>
-<p><%= image_tag @search.poster['imdb'] %></p>
-<p><b>Poster Link:</b> <%= @search.poster['imdb']%></p>
-<p><b>Cover Link:</b> <%= @search.poster['cover']%></p>
+<%= render 'search_show' %>
 
-
-  <%= form_for @movie, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
-  <%= f.hidden_field :title, :value => @search.title %>
-  <%= f.hidden_field :year, :value => @search.year %>
-  <%= f.hidden_field :plot_simple, :value => @search.plot_simple %>
-  <%= f.hidden_field :actors, :value => @search.actors %>
-  <%= f.hidden_field :directors, :value => @search.directors %>
-  <%= f.hidden_field :film_location, :value => @search.film_location %>
-  <%= f.hidden_field :genre, :value => @search.genre %>
-  <%= f.hidden_field :rated, :value => @search.rated %>
-  <%= f.hidden_field :rating, :value => @search.rating %>
-  <%= f.hidden_field :runtime, :value => @search.runtime %>
-  <%= f.hidden_field :release_date, :value => @search.release_date %>
-  <%= f.hidden_field :writers, :value => @search.writers %>
-  <%= f.hidden_field :poster, :value => @search.poster['imdb'] %>
-  <%= f.submit "Create" %>
-<% end %>
-<% end %>
-
-
+<%= render 'search_form' %>
 
 <script>
 $(document).ready(function() {
@@ -50,37 +17,12 @@ $(document).ready(function() {
 
 </script>
 
-
 <body>
 
 <button>Toggle</button>
 <div id="secret">
-  <% @multi.each do |x,y| %>
-  <strong>Alt</strong>
-  	<% x.each do |y|  %>
-  	<p>
-  	<ul>
-  		<li> <%= y %> </li>
-  	</ul>
-  </p>
-  	<% end %>
 
-  <%= form_for @movie, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
-  <%= f.hidden_field :title, :value => x['title'] %>
-  <%= f.hidden_field :year, :value => x['year'] %>
-  <%= f.hidden_field :plot_simple, :value => x['plot_simple'] %>
-  <%= f.hidden_field :actors, :value => x['actors'] %>
-  <%= f.hidden_field :directors, :value => x['directors'] %>
-  <%= f.hidden_field :film_location, :value => x['film_location'] %>
-  <%= f.hidden_field :genre, :value => x['genre'] %>
-  <%= f.hidden_field :rated, :value => x['rated'] %>
-  <%= f.hidden_field :rating, :value => x['rating'] %>
-  <%= f.hidden_field :runtime, :value => x['runtime'] %>
-  <%= f.hidden_field :release_date, :value => x['release_date'] %>
-  <%= f.hidden_field :writers, :value => x['writers'] %>
-  <%= f.hidden_field :poster, :value => x['poster']['imdb'] unless x["poster"].nil? %>
-  <%= f.submit "Create" %>
-<% end %>
-  <%end%>
+    <%= render 'multi_form' %>
+
 </div>
 </body>

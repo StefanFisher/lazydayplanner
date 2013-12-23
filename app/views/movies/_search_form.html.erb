@@ -1,0 +1,16 @@
+  <%= form_for @movie, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+  <%= f.hidden_field :title, :value => @search.title %>
+  <%= f.hidden_field :year, :value => @search.year %>
+  <%= f.hidden_field :plot_simple, :value => @search.plot_simple %>
+  <%= f.hidden_field :actors, :value => @search.actors %>
+  <%= f.hidden_field :directors, :value => @search.directors %>
+  <%= f.hidden_field :film_location, :value => @search.film_location %>
+  <%= f.hidden_field :genre, :value => @search.genre %>
+  <%= f.hidden_field :rated, :value => @search.rated %>
+  <%= f.hidden_field :rating, :value => @search.rating %>
+  <%= f.hidden_field :runtime, :value => @search.runtime %>
+  <%= f.hidden_field :release_date, :value => @search.release_date %>
+  <%= f.hidden_field :writers, :value => @search.writers %>
+  <%= f.hidden_field :poster, :value => @search.poster['imdb'] %>
+  <%= f.submit "Create" %>
+<% end %>

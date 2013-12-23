@@ -1,0 +1,27 @@
+  <% @multi.each do |x,y| %>
+  <strong>Alt</strong>
+    <% x.each do |y|  %>
+    <p>
+    <ul>
+      <li> <%= y %> </li>
+    </ul>
+  </p>
+    <% end %>
+
+  <%= form_for @movie, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+  <%= f.hidden_field :title, :value => x['title'] %>
+  <%= f.hidden_field :year, :value => x['year'] %>
+  <%= f.hidden_field :plot_simple, :value => x['plot_simple'] %>
+  <%= f.hidden_field :actors, :value => x['actors'] %>
+  <%= f.hidden_field :directors, :value => x['directors'] %>
+  <%= f.hidden_field :film_location, :value => x['film_location'] %>
+  <%= f.hidden_field :genre, :value => x['genre'] %>
+  <%= f.hidden_field :rated, :value => x['rated'] %>
+  <%= f.hidden_field :rating, :value => x['rating'] %>
+  <%= f.hidden_field :runtime, :value => x['runtime'] %>
+  <%= f.hidden_field :release_date, :value => x['release_date'] %>
+  <%= f.hidden_field :writers, :value => x['writers'] %>
+  <%= f.hidden_field :poster, :value => x['poster']['imdb'] unless x["poster"].nil? %>
+  <%= f.submit "Create" %>
+<% end %>
+<%end%>
