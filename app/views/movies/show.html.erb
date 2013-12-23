@@ -1,17 +1,20 @@
-<p>
-  <strong>Title:</strong>
-  <%= @movie.title %>
-</p>
- 
-<p>
-  <strong>Text:</strong>
-  <%= @movie.text %>
-</p>
+<h1> Movie <%= @movie.id %></h1>
 
-<p>
-  <strong>Year:</strong>
-  <%= @movie.year %>
-</p>
+<p><b>Title:</b> <%= @movie.title %></p>
+<p><b>Year:</b> <%= @movie.year %></p>
+<p><b>Actors:</b> <%= @movie.actors %></p>
+<p><b>Directors:</b> <%= @movie.directors %></p>
+<p><b>Film Location:</b> <%= @movie.film_location %></p>
+<p><b>Genre:</b> <%= @movie.genre %></p>
+<p><b>Rated:</b> <%= @movie.rated %></p>
+<p><b>IMDB Rating:</b> <%= @movie.rating %></p>
+<p><b>Simple Plot:</b> <%= @movie.plot_simple %></p>
+<p><b>Runtime:</b> <%= @movie.runtime %></p>
+<p><b>Release Date:</b> <%= @movie.release_date %></p>
+<p><%= image_tag @movie.poster %></p>
+
+<p><b>Poster Link:</b> <%= @movie.poster} %></p>
+
 
 <h2>Comments</h2>
 <%= render @movie.comments %>
