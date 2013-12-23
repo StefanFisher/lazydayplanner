@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131201170056) do
+ActiveRecord::Schema.define(version: 20131223033226) do
 
   create_table "comments", force: true do |t|
     t.string   "commenter"
@@ -29,6 +29,18 @@ ActiveRecord::Schema.define(version: 20131201170056) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "year"
+    t.text     "actors"
+    t.text     "directors"
+    t.string   "film_location"
+    t.text     "genre"
+    t.string   "imdb_id"
+    t.text     "plot_simple"
+    t.text     "poster"
+    t.string   "rated"
+    t.decimal  "rating"
+    t.string   "runtime"
+    t.integer  "release_date"
+    t.text     "writers"
   end
 
 end
