@@ -73,7 +73,9 @@ end
 
   def movie_params
 
-  	params.require(:movie).permit(:title,:text, :year)
+  	params.require(:movie).permit(:title,:text, :year, :plot_simple, :genre,
+      :actors, :directors, :writers, :poster, :rated,
+      :rating, :runtime, :release_date, :film_location)
 
   end
 
