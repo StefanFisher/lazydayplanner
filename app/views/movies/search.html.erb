@@ -64,8 +64,6 @@ $(document).ready(function() {
   	</ul>
   </p>
   	<% end %>
-    <%= x['poster'].methods %>
-<p><%= x["poster"].instance_variables %></p>
 
   <%= form_for @movie, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
   <%= f.hidden_field :title, :value => x['title'] %>
@@ -80,7 +78,7 @@ $(document).ready(function() {
   <%= f.hidden_field :runtime, :value => x['runtime'] %>
   <%= f.hidden_field :release_date, :value => x['release_date'] %>
   <%= f.hidden_field :writers, :value => x['writers'] %>
-  <%= f.hidden_field :poster, :value => x['poster'] %>
+  <%= f.hidden_field :poster, :value => x['poster']['imdb'] unless x["poster"].nil? %>
   <%= f.submit "Create" %>
 <% end %>
   <%end%>
