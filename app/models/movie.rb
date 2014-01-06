@@ -9,4 +9,16 @@ class Movie < ActiveRecord::Base
 	serialize :poster
 	serialize :writers
 
+	after_commit :populate_actors
+	
+	private
+		def populate_actors
+			parsed_actors = JSON.parse(self.actors_list)
+
+			parsed_actors.each do |x| 
+			actor = Actor.find_or_create_by(full: x)
+			self.actors << actor
+			end
+		end
+
 end
