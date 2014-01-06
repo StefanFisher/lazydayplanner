@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131223033226) do
+ActiveRecord::Schema.define(version: 20140106214540) do
+
+  create_table "actors", force: true do |t|
+    t.string   "full"
+    t.string   "first"
+    t.string   "last"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "comments", force: true do |t|
     t.string   "commenter"
