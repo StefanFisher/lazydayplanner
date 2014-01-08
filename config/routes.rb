@@ -64,10 +64,15 @@ resources :movies do
   resources :comments
 end
 
+resources :actors do
+  resources :movies
+end
+
 root to: "welcome#index"
 
 get '/movies' => "movies#index"
 get '/movies/new' => "movies#new"
+get '/actors' => "actors#index"
 #get '/movies/search', to: "movies#search"
 
 

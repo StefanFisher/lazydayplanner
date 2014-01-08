@@ -1,0 +1,32 @@
+<h1> Actor <%= @actor.id %></h1>
+
+<p><b>First Name:</b> <%= @actor.first_name %></p>
+<p><b>Middle Name:</b> <%= @actor.middle_name %></p>
+<p><b>Last Name:</b> <%= @actor.last_name %></p>
+<p><b>Full Name in DB:</b> <%= @actor.full %></p>
+
+<p><%= link_to "Look at Movies", 'movies' %></p>
+<p><%= link_to "Add a Movie", movies_new_path %></p>
+<p><%= link_to "Look at Actors", actors_path %></p>
+
+<h2>Movies</h2>
+
+<table border="1">
+  <tr>
+    <th>Title</th>
+    <th>Year</th>
+    <th>Genre</th>
+    <th>Plot</th>
+  </tr>
+ 
+  <% @actor.movies.each do |movie| %>
+    <tr>
+      <td><%= movie.title %></td>
+      <td><%= movie.year %></td>
+      <td><%= movie.genre_list %></td>
+      <td><%= movie.plot_simple %></td>
+      <td><%= link_to 'Show', movie %></td>
+      <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
+    </tr>
+  <% end %>
+</table>
