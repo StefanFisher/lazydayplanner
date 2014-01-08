@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140107023016) do
+ActiveRecord::Schema.define(version: 20140107033607) do
 
   create_table "actors", force: true do |t|
     t.string   "full"
@@ -38,6 +38,18 @@ ActiveRecord::Schema.define(version: 20140107023016) do
 
   add_index "comments", ["movie_id"], name: "index_comments_on_movie_id"
 
+  create_table "genres", force: true do |t|
+    t.string   "genre"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "genres_movies", id: false, force: true do |t|
+    t.integer "genre_id"
+    t.integer "movie_id"
+  end
+
   create_table "movies", force: true do |t|
     t.string   "title"
     t.text     "text"
@@ -47,7 +59,7 @@ ActiveRecord::Schema.define(version: 20140107023016) do
     t.text     "actors_list"
     t.text     "directors"
     t.string   "film_location"
-    t.text     "genre"
+    t.text     "genre_list"
     t.string   "imdb_id"
     t.text     "plot_simple"
     t.text     "poster"

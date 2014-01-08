@@ -18,8 +18,8 @@ class Actor < ActiveRecord::Base
 					self.last_name=arr[2]
 				when 3
 					self.first_name=arr[0]
-					self.middle_name=arr[1]+arr[2]
-					self.last_name=arr[4]
+					self.middle_name=arr[1]+" "+arr[2]
+					self.last_name=arr[3]
 			end
 		end	
 end
