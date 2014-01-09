@@ -62,9 +62,15 @@ resources :movies do
     post 'new'
   end
   resources :comments
+  resources :actors
+  resources :genres
 end
 
 resources :actors do
+  resources :movies
+end
+
+resources :genres do
   resources :movies
 end
 
@@ -73,6 +79,7 @@ root to: "welcome#index"
 get '/movies' => "movies#index"
 get '/movies/new' => "movies#new"
 get '/actors' => "actors#index"
+
 #get '/movies/search', to: "movies#search"
 
 

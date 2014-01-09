@@ -1,0 +1,27 @@
+<h1>Genres#index</h1>
+<p>Find me in app/views/genres/index.html.erb</p>
+
+<p>Look at movies <%= link_to "HERE", "/movies" %></p>
+<p>Look at actors <%= link_to "HERE", actors_path %></p>
+<p>Look at genres <%= link_to "HERE", genres_path %></p>
+<p>Go back home <%= link_to "HOME", root_path%></p>
+
+<table border="1">
+  <tr>
+    <th>ID</th>
+    <th>Genre</th>
+    <th>Count</th>
+    <th>Description</th>
+  </tr>
+ 
+  <% @genres.each do |genre| %>
+    <tr>
+      <td><%= genre.id %></td>
+      <td><%= link_to genre.genre, genre_path(genre.id) %></td>
+      <td><%= genre.movies.count %></td>
+      <td><%= genre.description %></td>
+      <td><%= link_to 'Show', genre %></td>
+
+    </tr>
+  <% end %>
+</table>
