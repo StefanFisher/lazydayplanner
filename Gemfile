@@ -39,6 +39,8 @@ group :doc do
 end
 
 gem 'httparty'
+#for setting up users and authentification
+gem 'devise'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
