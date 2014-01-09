@@ -10,6 +10,8 @@
     <th>First</th>
     <th>Middle</th>
     <th>Last</th>
+    <th>Movies Appeared</th>
+    <th>Most Recent Movie</th>
   </tr>
  
   <% @actors.each do |actor| %>
@@ -18,7 +20,10 @@
       <td><%= actor.first_name %></td>
       <td><%= actor.middle_name %></td>
       <td><%= actor.last_name %></td>
+      <td><%= actor.movies.count %></td>
+      <td><%= actor.movies.last.title unless actor.movies.last.nil? %></td>
       <td><%= link_to 'Show', actor %></td>
+      <td><%= link_to 'Delete', actor_path(actor), method: :delete, data: {confirm: 'Are you sure?'} %></td>
 
     </tr>
   <% end %>

@@ -44,7 +44,7 @@ class MoviesController < ApplicationController
   def update
   @movie = Movie.find(params[:id])
  
-  if @movie.update(params[:movie].permit(:title, :text))
+  if @movie.update(movie_params)
     redirect_to @movie
   else
     render 'edit'
