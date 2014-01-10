@@ -2,8 +2,8 @@ require "APISearch"
 class MoviesController < ApplicationController
   #http_basic_authenticate_with name: "dhh", password: "secret", except: [:index,:show]
   def index
-
-  	@movies = Movie.all
+    #show only the movies the current user owns
+  	@movies = current_user.movies
 
   end
 
@@ -23,6 +23,8 @@ class MoviesController < ApplicationController
   	#render text: params[:movie].inspect
   	@movie = Movie.new(movie_params)
   	if @movie.save
+      #attach the current user the owner of the added movie
+      @movie.users << current_user
   		redirect_to @movie
   	else
   		render 'new'

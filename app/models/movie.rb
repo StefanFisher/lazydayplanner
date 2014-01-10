@@ -3,6 +3,7 @@ class Movie < ActiveRecord::Base
 	has_many :comments, dependent: :destroy
 	has_and_belongs_to_many :actors
 	has_and_belongs_to_many :genres
+	has_and_belongs_to_many :users
 	validates :title, presence: true,length: {minimum: 2}
 	serialize :directors
 	serialize :poster

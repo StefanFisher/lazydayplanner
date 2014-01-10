@@ -13,15 +13,15 @@
     <th>Count</th>
     <th>Description</th>
   </tr>
- 
-  <% @genres.each do |genre| %>
-    <tr>
-      <td><%= genre.id %></td>
-      <td><%= link_to genre.genre, genre_path(genre.id) %></td>
-      <td><%= genre.movies.count %></td>
-      <td><%= genre.description %></td>
-      <td><%= link_to 'Show', genre %></td>
 
-    </tr>
-  <% end %>
+    <% @genres.each do |genre| %>
+      <tr>
+        <td><%= genre.id %></td>
+        <td><%= link_to genre.genre, genre_path(genre.id) %></td>
+        <td><%= genre.movies.count %></td>
+        <td><%= genre.description %></td>
+        <td><%= link_to 'Show', genre %></td>
+      </tr>
+    <% end %>
+
 </table>
