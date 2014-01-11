@@ -20,7 +20,7 @@
     <th>Plot</th>
   </tr>
  
-  <% @genre.movies.each do |movie| %>
+  <% @genre.movies.joins(:users).where("users.id" => current_user.id).each do |movie| %>
     <tr>
       <td><%= movie.title %></td>
       <td><%= movie.year %></td>
