@@ -18,4 +18,10 @@ class ApplicationController < ActionController::Base
 
 	end
 
+	def addOwnership
+		movie = Movie.find(params[:movie_id])
+		movie.users << current_user
+		redirect_to(:action=>'index')
+	end
+
 end

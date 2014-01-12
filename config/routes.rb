@@ -61,6 +61,7 @@ Lazydayplanner::Application.routes.draw do
 resources :movies do
     collection do
     post 'new'
+    post 'addOwnership'
   end
   resources :comments
   resources :actors

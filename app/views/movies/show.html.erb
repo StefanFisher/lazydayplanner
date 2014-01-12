@@ -33,6 +33,14 @@
 <%= render "comments/form" %>
 
 <p><%= link_to "Look at Movies", '/movies' %></p>
-<p><%= link_to 'Edit', edit_movie_path(@movie) %></p>
+
+<% if !current_user.movies.exists?(@movie.id) %>
+	<p><strong>You don't own this! Do you want to add it?</strong><%= button_to 'Make it so', {:action => :addOwnership,
+		:remote => true, :movie_id => @movie.id, :user_id=> current_user.id ,
+		:method=>:post } %></p>
+	<% else %>
+	<p><%= link_to 'Edit', edit_movie_path(@movie) %></p>
+<% end %>
+
 <p>Add a new movie <%= link_to "HERE", movies_new_path %></p>
 <p>Go back home <%= link_to "HOME", root_path%></p>
