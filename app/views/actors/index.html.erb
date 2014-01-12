@@ -11,20 +11,22 @@
     <th>Middle</th>
     <th>Last</th>
     <th>Movies Appeared</th>
-    <th>Most Recent Movie</th>
+    <th>Most Recently Added Movie</th>
   </tr>
- 
-  <% @actors.each do |actor| %>
+  
+  <% @actors.each do |movie| %> 
+  <% movie.each do |actor| %>
     <tr>
-      <td><%= actor.full %></td>
+      <td><%= link_to actor.full, actor_path(actor.id) %></td>
       <td><%= actor.first_name %></td>
       <td><%= actor.middle_name %></td>
       <td><%= actor.last_name %></td>
-      <td><%= actor.movies.count %></td>
+      <td><%= actor.movies.joins(:users).where("users.id" => current_user.id).count %></td>
       <td><%= actor.movies.last.title unless actor.movies.last.nil? %></td>
       <td><%= link_to 'Show', actor %></td>
       <td><%= link_to 'Delete', actor_path(actor), method: :delete, data: {confirm: 'Are you sure?'} %></td>
 
     </tr>
+  <% end %>
   <% end %>
 </table>

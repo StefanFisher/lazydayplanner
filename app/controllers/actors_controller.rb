@@ -1,7 +1,11 @@
 class ActorsController < ApplicationController
 
 	def index
-		@actors = Actor.all
+    #Since the list can be hundred of lines, only show the actors for movies you own.
+    #create an array for the actors for movies you own
+		@actors = []
+    #add the actors to the array. This is added as a 2d array. [movie][actors]
+    current_user.movies.each do |x| @actors << x.actors end
 	end
 
 	def show

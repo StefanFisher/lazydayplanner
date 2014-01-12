@@ -13,7 +13,7 @@ class MoviesController < ApplicationController
 
     if params[:search].present?
       search
-      render 'search'
+      #render 'search'
     end
 
   end
@@ -44,23 +44,25 @@ class MoviesController < ApplicationController
   end
 
   def update
-  @movie = Movie.find(params[:id])
+    @movie = Movie.find(params[:id])
  
-  if @movie.update(movie_params)
-    redirect_to @movie
-  else
-    render 'edit'
+    if @movie.update(movie_params)
+      redirect_to @movie
+    else
+      render 'edit'
+    end
   end
-end
 
 def search
 
-@movie = Movie.new
-
-@search = APISearch.new(params[:search])
-
-@multi = @search.MultiSearch(params[:search],5)
-
+  if(titleExist?)
+    redirect_to show
+  else
+    @search = APISearch.new(params[:search])
+    @movie = Movie.new
+    @multi = @search.MultiSearch(params[:search],5)
+    render 'search'
+  end
 end
 
 def destroy
