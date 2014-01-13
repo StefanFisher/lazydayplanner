@@ -21,6 +21,7 @@
   <%= f.hidden_field :runtime, :value => x['runtime'] %>
   <%= f.hidden_field :release_date, :value => x['release_date'] %>
   <%= f.hidden_field :writers, :value => x['writers'] %>
+  <%= f.hidden_field :imdb_url, :value => x['imdb_url'] %>
   <%= f.hidden_field :poster, :value => x['poster']['imdb'] unless x["poster"].nil? %>
   <%= f.submit "Create" %>
 <% end %>

@@ -18,6 +18,7 @@
 </p>
 <p><b>Rated:</b> <%= @movie.rated %></p>
 <p><b>IMDB Rating:</b> <%= @movie.rating %></p>
+<p><b>IMDB Link:</b> <%= link_to @movie.imdb_url, @movie.imdb_url  %></p>
 <p><b>Simple Plot:</b> <%= @movie.plot_simple %></p>
 <p><b>Runtime:</b> <%= @movie.runtime %></p>
 <p><b>Release Date:</b> <%= @movie.release_date %></p>

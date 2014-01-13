@@ -1,6 +1,8 @@
 class APISearch
 
-	attr_reader :title, :actors, :directors, :film_location, :genre, :imdb_id, :plot, :plot_simple, :poster, :rated, :rating, :runtime, :release_date, :writers, :year 
+	attr_reader :title, :actors, :directors, :film_location, :genre, :imdb_id, 
+	:plot, :plot_simple, :poster, :rated, :rating, :runtime, :release_date, 
+	:writers, :year, :imdb_url
 
 	def initialize(title)
 
@@ -21,6 +23,7 @@ class APISearch
 		@release_date = @response[0]['release_date']
 		@writers = @response[0]['writers']
 		@year = @response[0]['year']
+		@imdb_url = @response[0]['imdb_url']
 
 
 	end

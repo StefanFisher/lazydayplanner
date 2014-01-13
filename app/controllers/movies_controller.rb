@@ -79,7 +79,7 @@ end
 
   	params.require(:movie).permit(:title,:text, :year, :plot_simple, :genre_list,
       :actors_list, :directors, :writers, :poster, :rated,
-      :rating, :runtime, :release_date, :film_location)
+      :rating, :runtime, :release_date, :film_location, :imdb_url)
 
   end
 
