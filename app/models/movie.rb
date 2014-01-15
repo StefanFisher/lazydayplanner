@@ -4,8 +4,8 @@ class Movie < ActiveRecord::Base
 	has_and_belongs_to_many :actors
 	has_and_belongs_to_many :genres
 	has_and_belongs_to_many :users
-	#validates :year, presence: true,length: {minimum: 4}
-	validates :title, presence: true,length: {minimum: 2}#, uniqueness: {scope: :year}
+	validates :year, presence: true,length: {minimum: 4}
+	validates :title, presence: true,length: {minimum: 2}, uniqueness: {scope: :year}
 	serialize :directors
 	serialize :poster
 	serialize :writers
