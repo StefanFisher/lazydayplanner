@@ -9,7 +9,7 @@ class MoviesController < ApplicationController
 
   def new
   	#sends the movie objest back to new if the validation fails
-  	@movie = Movie.new
+    @movie = Movie.new
 
     if params[:search].present?
       search
@@ -59,7 +59,7 @@ def search
     redirect_to show
   else
     @search = APISearch.new(params[:search])
-    @movie = Movie.new
+    #@movie = Movie.new
     @multi = @search.MultiSearch(params[:search],5)
     render 'search'
   end

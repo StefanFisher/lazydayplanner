@@ -79,7 +79,7 @@ end
 root to: "welcome#index"
 
 get '/movies' => "movies#index"
-get '/movies/new' => "movies#new"
+#get '/movies/new' => "movies#new"
 get '/actors' => "actors#index"
 
 #get '/movies/search', to: "movies#search"
