@@ -1,0 +1,37 @@
+<h1> Form for Adding Movie Overrides</h1>
+
+<%= form_for @movie_override, url: {action:"create"} do |f| %>
+  <% if @movie_override.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@movie_override.errors.count, "error") %> prohibited
+      this movie from being saved:</h2>
+    <ul>
+    <% @movie_override.errors.full_messages.each do |x| %>
+      <li><%= x %></li>
+    <% end %>
+    </ul>
+  </div>
+  <% end %>
+
+  <%= f.hidden_field :movie_id, :value => @movie.id %>
+  <%= f.hidden_field :user_id, :value => current_user.id %>
+
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title, :value => @movie.title  %>
+  </p>
+ 
+  <p>
+    <%= f.label :plot_simple %><br>
+    <%= f.text_area :plot_simple, :value => @movie.plot_simple %>
+  </p>
+
+   <p>
+    <%= f.label :year %><br>
+    <%= f.text_field :year, :value => @movie.year %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

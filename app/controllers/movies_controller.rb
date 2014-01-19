@@ -4,7 +4,7 @@ class MoviesController < ApplicationController
   def index
     #show only the movies the current user owns
   	@movies = current_user.movies
-
+    @override = current_user.movie_overrides
   end
 
   def new

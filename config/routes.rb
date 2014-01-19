@@ -76,6 +76,10 @@ resources :genres do
   resources :movies
 end
 
+resources :users do
+  resources :movie_overrides
+end
+
 root to: "welcome#index"
 
 get '/movies' => "movies#index"

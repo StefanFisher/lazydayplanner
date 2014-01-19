@@ -1,4 +1,4 @@
-<h1>Movies#index</h1>
+<h1>Movies_Override#index</h1>
 <p>Find me in app/views/movies/index.html.erb</p>
 
 <p>Add a new movie <%= link_to "HERE", new_movie_path %></p>
@@ -17,22 +17,8 @@
     <th>Genre</th>
     <th>Plot</th>
   </tr>
-  
-  <% @movies.each do |movie| %>
-  <% if @override.exists?(:movie_id => movie.id) %>
-    <% @override.where(:movie_id => movie.id).each do |x| %>
-    <tr>
-      <td><%= x.title %></td>
-      <td><%= x.year %></td>
-      <td><%= movie.genre_list %></td>
-      <td><%= x.plot_simple %></td>
-      <td><%= link_to 'Show', movie %></td>
-      <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
-      <td><%= link_to 'Override', edit_user_movie_override_path(:user_id => current_user.id, :id => x.id) %></td> 
-      <td><%= link_to 'Delete', movie_path(movie), method: :delete, data: {confirm: 'Are you sure?'} %></td>
-    </tr>
-    <% end %>
-    <% else %>
+ 
+  <% @movie_override.each do |movie| %>
     <tr>
       <td><%= movie.title %></td>
       <td><%= movie.year %></td>
@@ -40,9 +26,7 @@
       <td><%= movie.plot_simple %></td>
       <td><%= link_to 'Show', movie %></td>
       <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
-      <td><%= link_to 'Override', new_user_movie_override_path(:user_id => current_user.id, :id => movie.id) %></td> 
       <td><%= link_to 'Delete', movie_path(movie), method: :delete, data: {confirm: 'Are you sure?'} %></td>
     </tr>
-  <% end %>
   <% end %>
 </table>
