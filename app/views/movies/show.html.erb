@@ -3,7 +3,7 @@
 <p><b>Title:</b> <%= @movie.title %></p>
 <p><b>Year:</b> <%= @movie.year %></p>
 <p><b>Actors:</b> 
-	<% @movie.actors.each do |actor| %>
+	<% @real_movie.actors.each do |actor| %>
 	<%=  link_to actor.full, actor_path(actor.id) %>
 	<%= ", " %>
 	<% end %>
@@ -11,7 +11,7 @@
 <p><b>Directors:</b> <%= @movie.directors %></p>
 <p><b>Film Location:</b> <%= @movie.film_location %></p>
 <p><b>Genre:</b>
-	<% @movie.genres.each do |genre| %>
+	<% @real_movie.genres.each do |genre| %>
 	<%=  link_to genre.genre, genre_path(genre.id) %>
 	<%= ", " %>
 	<% end %>
@@ -26,6 +26,7 @@
 
 <p><b>Poster Link:</b> <%= @movie.poster %></p>
 
+<% @movie = @real_movie %>
 
 <h2>Comments</h2>
 <%= render @movie.comments %>

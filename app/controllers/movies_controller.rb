@@ -33,8 +33,10 @@ class MoviesController < ApplicationController
   end
 
   def show
-  	#instance variables get passed to the new
-  	@movie = Movie.find(params[:id])
+    overrides = current_user.movie_overrides
+
+  	@movie = overrides.exists?(:movie_id => params[:id]) ? overrides.where(:movie_id => params[:id]).first : Movie.find(params[:id])
+    @real_movie = Movie.find(params[:id])
   end
 
   def edit
