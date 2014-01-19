@@ -20,7 +20,7 @@
   
   <% @movies.each do |movie| %>
   <% if @override.exists?(:movie_id => movie.id) %>
-    <% @override.where(:movie_id => movie.id).each do |x| %>
+    <%  x = @override.where(:movie_id => movie.id).first %>
     <tr>
       <td><%= x.title %></td>
       <td><%= x.year %></td>
@@ -31,7 +31,6 @@
       <td><%= link_to 'Override', edit_user_movie_override_path(:user_id => current_user.id, :id => x.id) %></td> 
       <td><%= link_to 'Delete', movie_path(movie), method: :delete, data: {confirm: 'Are you sure?'} %></td>
     </tr>
-    <% end %>
     <% else %>
     <tr>
       <td><%= movie.title %></td>

@@ -15,20 +15,55 @@
 
   <p>
     <%= f.label :title %><br>
-    <%= f.text_field :title  %>
+    <%= f.text_field :title %>
   </p>
  
-  <p>
-    <%= f.label :plot_simple %><br>
-    <%= f.text_area :plot_simple%>
-  </p>
-
    <p>
     <%= f.label :year %><br>
     <%= f.text_field :year %>
+  </p>
+  <p>Add Actors Later </p>
+  <p>
+    <%= f.label :directors %><br>
+    <%= f.text_field :directors %>
+  </p>
+  <p>
+    <%= f.label :film_location %><br>
+    <%= f.text_field :film_location %>
+  </p>
+  <p>Add Genres Later </p>
+  <p>
+    <%= f.label :rated %><br>
+    <%= f.text_field :rated %>
+  </p>
+  <p>
+    <%= f.label :rating %><br>
+    <%= f.text_field :rating %>
+  </p>
+  <p>
+    <%= f.label :imdb_url %><br>
+    <%= f.text_field :imdb_url %>
+  </p>
+  <p>
+    <%= f.label :plot_simple %><br>
+    <%= f.text_area :plot_simple %>
+  </p>
+  <p>
+    <%= f.label :runtime %><br>
+    <%= f.text_field :runtime %>
+  </p>
+  <p>
+    <%= f.label :release_date %><br>
+    <%= f.text_field :release_date %>
+  </p>
+  <p>
+    <%= f.label :poster %><br>
+    <%= f.text_field :poster %>
   </p>
 
   <p>
     <%= f.submit %>
   </p>
 <% end %>
+
+<p><%= link_to "Look at Movies", '/movies' %></p>
