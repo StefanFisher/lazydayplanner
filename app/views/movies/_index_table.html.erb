@@ -1,0 +1,40 @@
+<table border="1">
+  <tr>
+    <th>Title</th>
+    <th>Year</th>
+    <th>Genre</th>
+    <th>Plot</th>
+  </tr>
+  
+  <% @movies.each do |movie| %>
+  <% if @override.exists?(:movie_id => movie.id) %>
+    <%  x = @override.where(:movie_id => movie.id).first %>
+    <tr>
+      <td><%= x.title %></td>
+      <td><%= x.year %></td>
+      <td><%= movie.genre_list %></td>
+      <td><%= x.plot_simple %></td>
+      <td><%= link_to 'Show', movie %></td>
+      <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
+      <td><%= link_to 'Override', edit_user_movie_override_path(:user_id => current_user.id, :id => x.id) %></td> 
+      <td><%= link_to 'Delete', movie_path(movie), method: :delete, data: {confirm: 'Are you sure?'} %></td>
+    </tr>
+    <% else %>
+    <tr>
+      <td><%= movie.title %></td>
+      <td><%= movie.year %></td>
+      <td>
+        <% movie.genres.each do |genre| %>
+          <%=  link_to genre.genre, genre_path(genre.id) %>
+          <%= ", " %>
+        <% end %>
+      </td>
+      <td><%= movie.plot_simple %></td>
+      <td><%= link_to 'Show', movie %></td>
+      <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
+      <td><%= link_to 'Override', new_user_movie_override_path(:user_id => current_user.id, :id => movie.id) %></td> 
+      <td><%= link_to 'Delete', movie_path(movie), method: :delete, data: {confirm: 'Are you sure?'} %></td>
+    </tr>
+  <% end %>
+  <% end %>
+</table>

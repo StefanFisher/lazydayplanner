@@ -1,0 +1,18 @@
+<div class="row">
+
+<% @movies.each do |movie| %>
+  <% if movie.poster.nil? %>
+    <div class="col-md-3">
+    	<p class="poster_image"><%= link_to(image_tag('no_pic.jpg', size: "214x293"), movie) %></p>
+    	<p class="poster_title"><%= movie.title %></p>
+    	<br>
+    </div>
+    <% else %>
+ 		<div class="col-md-3">
+ 			<p class="poster_image"><%= link_to(image_tag(movie.poster, size: "214x293"), movie) %></p>
+ 			<p class="poster_title"><%= movie.title %></p>
+ 			<br>
+ 		</div>
+  <% end %>
+  <% end %>
+</div>

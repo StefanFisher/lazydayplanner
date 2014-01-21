@@ -5,5 +5,5 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_and_belongs_to_many :movies
-  has_many :movie_overrides
+  has_many :movie_overrides, dependent: :destroy
 end

@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140119213716) do
+ActiveRecord::Schema.define(version: 20140120224922) do
+
+  create_table "actor_overrides", force: true do |t|
+    t.string   "full"
+    t.string   "first_name"
+    t.string   "middle_name"
+    t.string   "last_name"
+    t.integer  "actor_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "actors", force: true do |t|
     t.string   "full"
