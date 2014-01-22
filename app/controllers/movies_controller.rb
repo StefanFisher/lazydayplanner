@@ -25,6 +25,8 @@ class MoviesController < ApplicationController
   	if @movie.save
       #attach the current user the owner of the added movie
       @movie.users << current_user
+      #create an entry for the user to set up preferences in the show view
+      MoviePref.create(:user_id => current_user.id, :movie_id => @movie.id)
   		redirect_to @movie
   	else
   		render 'new'
@@ -34,8 +36,11 @@ class MoviesController < ApplicationController
 
   def show
     overrides = current_user.movie_overrides
-
   	@movie = overrides.exists?(:movie_id => params[:id]) ? overrides.where(:movie_id => params[:id]).first : Movie.find(params[:id])
+    #get the preferences for the movie
+    pref = MoviePref.where(:movie_id => params[:id], :user_id => current_user.id).first
+    #if the movie doesn;t have preferences go ahead and create blank ones, else, pull them
+    @pref = pref.nil? ? MoviePref.create(:user_id => current_user.id, :movie_id => @movie.id) : pref
     @real_movie = Movie.find(params[:id])
   end
 

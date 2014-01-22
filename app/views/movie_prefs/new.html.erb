@@ -1,0 +1,34 @@
+<%= form_for @movie_prefs, url: {action:"create"} do |f| %>
+  <% if @movie_prefs.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@movie_prefs.errors.count, "error") %> prohibited
+      this movie from being saved:</h2>
+    <ul>
+    <% @movie_prefs.errors.full_messages.each do |x| %>
+      <li><%= x %></li>
+    <% end %>
+    </ul>
+  </div>
+  <% end %>
+
+  <%= f.hidden_field :movie_id, :value => :id %>
+  <%= f.hidden_field :user_id, :value => current_user.id %>
+
+  <p>
+    <%= f.label :dvd %><br>
+    <%= f.check_box :dvd %>
+  </p>
+  <p>
+    <%= f.label :bluray %><br>
+    <%= f.check_box :bluray %>
+  </p>
+  <p>
+    <%= f.label :digital %><br>
+    <%= f.check_box :digital %>
+  </p>
+
+   
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

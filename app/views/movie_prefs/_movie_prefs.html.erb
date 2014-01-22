@@ -1,0 +1,15 @@
+
+<%= form_for @pref, :url => user_movie_pref_path(current_user.id, @movie.id), :html => {:method => :patch} do |f| %>
+
+	<%= f.hidden_field :movie_id, :value => @movie.id %>
+  <%= f.hidden_field :user_id, :value => current_user.id %>
+  <%= f.hidden_field :id, :value => @pref.id %>
+
+  <p>DVD
+  <%= f.check_box :dvd, :value => @pref.dvd %></p>
+  <p>BLURAY
+  <%= f.check_box :bluray, :value => @pref.bluray %></p>
+  <p>DIGITAL
+  <%= f.check_box :digital, :value => @pref.digital %></p>
+      <%= f.submit "Save", :name => nil %> 
+<% end %>

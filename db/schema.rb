@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140120224922) do
+ActiveRecord::Schema.define(version: 20140121172816) do
 
   create_table "actor_overrides", force: true do |t|
     t.string   "full"
@@ -77,6 +77,19 @@ ActiveRecord::Schema.define(version: 20140120224922) do
     t.string  "title"
     t.integer "year"
     t.string  "imdb_url"
+  end
+
+  create_table "movie_prefs", force: true do |t|
+    t.integer  "movie_id"
+    t.integer  "user_id"
+    t.boolean  "dvd"
+    t.boolean  "bluray"
+    t.boolean  "digital"
+    t.integer  "personal_rating"
+    t.string   "location"
+    t.string   "lent_to"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "movies", force: true do |t|

@@ -78,7 +78,10 @@ end
 
 resources :users do
   resources :movie_overrides
+  resources :movie_prefs
 end
+
+#resources :movie_prefs
 
 root to: "welcome#index"
 
