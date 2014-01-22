@@ -1,4 +1,5 @@
 require "APISearch"
+require "APISearchRottenTomatoes"
 class MoviesController < ApplicationController
   #http_basic_authenticate_with name: "dhh", password: "secret", except: [:index,:show]
   def index
@@ -65,7 +66,7 @@ def search
   if(titleExist?)
     redirect_to show
   else
-    @search = APISearch.new(params[:search])
+    @search = APISearchRottenTomatoes.new(params[:search])
     #@movie = Movie.new
     @multi = @search.MultiSearch(params[:search],5)
     render 'search'

@@ -1,4 +1,4 @@
-  <% @multi.each do |x,y| %>
+  <% @multi['movies'].each do |x,y| %>
   <strong>Alt</strong>
     <% x.each do |y|  %>
     <p>
@@ -11,18 +11,18 @@
   <%= form_for @movie, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
   <%= f.hidden_field :title, :value => x['title'] %>
   <%= f.hidden_field :year, :value => x['year'] %>
-  <%= f.hidden_field :plot_simple, :value => x['plot_simple'] %>
-  <%= f.hidden_field :actors_list, :value => x['actors'] %>
-  <%= f.hidden_field :directors, :value => x['directors'] %>
-  <%= f.hidden_field :film_location, :value => x['film_location'] %>
-  <%= f.hidden_field :genre_list, :value => x['genres'] %>
-  <%= f.hidden_field :rated, :value => x['rated'] %>
-  <%= f.hidden_field :rating, :value => x['rating'] %>
+  <%= f.hidden_field :plot_simple, :value => x['synopsis'] %>
+  <%= f.hidden_field :actors_list, :value => x['abridged_cast'] %>
+  <!--<%= f.hidden_field :directors, :value => x['directors'] %> -->
+  <!--<%= f.hidden_field :film_location, :value => x['film_location'] %> -->
+  <!--<%= f.hidden_field :genre_list, :value => x['genres'] %> -->
+  <%= f.hidden_field :rated, :value => x['mpaa_rating'] %>
+  <%= f.hidden_field :rating, :value => x['ratings']['critics_score'] %>
   <%= f.hidden_field :runtime, :value => x['runtime'] %>
-  <%= f.hidden_field :release_date, :value => x['release_date'] %>
-  <%= f.hidden_field :writers, :value => x['writers'] %>
-  <%= f.hidden_field :imdb_url, :value => x['imdb_url'] %>
-  <%= f.hidden_field :poster, :value => x['poster']['imdb'] unless x["poster"].nil? %>
+  <%= f.hidden_field :release_date, :value => x['release_dates']['theater'] %>
+  <!--<%= f.hidden_field :writers, :value => x['writers'] %> -->
+  <%= f.hidden_field :imdb_url, :value => x['links']['alternate'] %>
+  <%= f.hidden_field :poster, :value => x['posters']['detailed'] unless x["posters"]['details'].nil? %>
   <%= f.submit "Create" %>
 <% end %>
 <%end%>

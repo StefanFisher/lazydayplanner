@@ -12,6 +12,6 @@
   <%= f.hidden_field :release_date, :value => @search.release_date %>
   <%= f.hidden_field :writers, :value => @search.writers %>
   <%= f.hidden_field :imdb_url, :value => @search.imdb_url %>
-  <%= f.hidden_field :poster, :value => @search.poster['imdb'] %>
+  <%= f.hidden_field :poster, :value => @search.poster %>
   <%= f.submit "Create" %>
 <% end %>
