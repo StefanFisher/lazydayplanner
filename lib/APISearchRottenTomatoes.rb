@@ -16,10 +16,18 @@ class APISearchRottenTomatoes
 		TitleSearch(title)
 
 		@title = @response['movies'][0]['title']
-		#@actors = @response[0]['actors']
+		#the actors come in asan array of hashes, but it has info I dont need
+		#break the hash down into an array of just actors
+		actor_array = @response['movies'][0]['abridged_cast'].map do |x| x['name'] end
+		#break the hash down into an array of the actors roles
+		role_array = @response['movies'][0]['abridged_cast'].map do |x| x['characters'] end
+			#combine the arrays into one big hash
+			actors_roles_hash = Hash[actor_array.zip(role_array)]
+			#now break the big hash out into an array of smaller hashes
+			array_of_hashes = actors_roles_hash.map do |k,v| Hash[k,v] end
+		@actors = array_of_hashes.to_json
 		#@directors = @response[0]['directors']
 		#@film_location = @response[0]['film_location']
-		#@genre = @response[0]['genres']
 		@imdb_id = @response['movies'][0]['id']
 		#@plot = @response[0]['plot']
 		@plot_simple = @response['movies'][0]['synopsis']
@@ -32,6 +40,11 @@ class APISearchRottenTomatoes
 		@year = @response['movies'][0]['year']
 		@imdb_url = @response['movies'][0]['links']['alternate']
 
+		#get the details from aanother API call
+		DetailSearch(@imdb_id)
+
+		@genre = @detail_response['genres']
+		@directors = @detail_response['abridged_directors'][0] #only pulls first director
 
 	end
 
@@ -48,6 +61,11 @@ class APISearchRottenTomatoes
 		response_string = HTTParty.get("http://api.rottentomatoes.com/api/public/v1.0/movies.json?apikey=3exp2hc3hykfqg8u4g8gudpx",:query => {:q => title, :page_limit => limit, :type => 'json'})
 		@response = response_string
 
+	end
+
+	def DetailSearch(rt_movie_id)
+		response_string = HTTParty.get("http://api.rottentomatoes.com/api/public/v1.0/movies/" + rt_movie_id + ".json?apikey=3exp2hc3hykfqg8u4g8gudpx")
+		@detail_response = response_string
 	end
 
 end
