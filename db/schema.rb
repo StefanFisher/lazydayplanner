@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140121172816) do
+ActiveRecord::Schema.define(version: 20140227041246) do
 
   create_table "actor_overrides", force: true do |t|
     t.string   "full"
@@ -37,6 +37,11 @@ ActiveRecord::Schema.define(version: 20140121172816) do
     t.integer "movie_id_id"
     t.integer "movie_id"
     t.integer "actor_id"
+  end
+
+  create_table "actors_roles", id: false, force: true do |t|
+    t.integer "actor_id"
+    t.integer "role_id"
   end
 
   create_table "comments", force: true do |t|
@@ -116,6 +121,17 @@ ActiveRecord::Schema.define(version: 20140121172816) do
   create_table "movies_users", id: false, force: true do |t|
     t.integer "movie_id"
     t.integer "user_id"
+  end
+
+  create_table "roles", force: true do |t|
+    t.string   "full"
+    t.string   "first_name"
+    t.string   "middle_name"
+    t.string   "last_name"
+    t.string   "movie"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "actor_id"
   end
 
   create_table "users", force: true do |t|

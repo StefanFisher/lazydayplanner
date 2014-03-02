@@ -70,6 +70,7 @@ end
 
 resources :actors do
   resources :movies
+  resources :roles
 end
 
 resources :genres do

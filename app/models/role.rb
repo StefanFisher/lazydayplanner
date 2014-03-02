@@ -1,6 +1,7 @@
-class Actor < ActiveRecord::Base
-	has_and_belongs_to_many :movies
-	has_many :roles, dependent: :destroy
+class Role < ActiveRecord::Base
+	#roles will get created with actors when a movie is added to the db
+	belongs_to :actor
+
 	before_save :fill_out_name
 
 
@@ -35,5 +36,6 @@ class Actor < ActiveRecord::Base
 						end
 					end
 			end
-		end	
+		end
+
 end
