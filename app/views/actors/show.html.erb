@@ -16,6 +16,7 @@
     <th>Title</th>
     <th>Year</th>
     <th>Genre</th>
+    <th>Role</th>
     <th>Plot</th>
   </tr>
  
@@ -24,6 +25,7 @@
       <td><%= movie.title %></td>
       <td><%= movie.year %></td>
       <td><%= movie.genre_list %></td>
+      <td><%= @actor.roles.find_by(:movie=>movie.title).full unless @actor.roles.find_by(:movie=>movie.title).nil? %></td>
       <td><%= movie.plot_simple %></td>
       <td><%= link_to 'Show', movie %></td>
       <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
