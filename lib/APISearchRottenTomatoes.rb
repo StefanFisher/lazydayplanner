@@ -26,7 +26,6 @@ class APISearchRottenTomatoes
 			#now break the big hash out into an array of smaller hashes
 			array_of_hashes = actors_roles_hash.map do |k,v| Hash[k,v] end
 		@actors = array_of_hashes.to_json
-		#@directors = @response[0]['directors']
 		#@film_location = @response[0]['film_location']
 		@imdb_id = @response['movies'][0]['id']
 		#@plot = @response[0]['plot']
@@ -45,6 +44,11 @@ class APISearchRottenTomatoes
 
 		@genre = @detail_response['genres']
 		@directors = @detail_response['abridged_directors'][0]['name'] #only pulls first director
+
+		if @plot_simple == "" 
+			imdb_call = IMDBSearch(@title)
+			@plot_simple = imdb_call['Plot']
+		end
 
 	end
 
@@ -66,6 +70,13 @@ class APISearchRottenTomatoes
 	def DetailSearch(rt_movie_id)
 		response_string = HTTParty.get("http://api.rottentomatoes.com/api/public/v1.0/movies/" + rt_movie_id + ".json?apikey=3exp2hc3hykfqg8u4g8gudpx")
 		@detail_response = response_string
+	end
+
+	def IMDBSearch(title)
+		#imdb search for the plot since Rotten Tomatoes doesn't have the rights to
+		#old summaries
+		imdb = HTTParty.get("http://www.omdbapi.com/", :query => {:t => @title, :y => @year})
+		return JSON.parse(imdb)
 	end
 
 end
