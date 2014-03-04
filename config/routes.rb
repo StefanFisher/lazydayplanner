@@ -62,6 +62,7 @@ resources :movies do
     collection do
     post 'new'
     post 'addOwnership'
+    delete 'userDestroy'
   end
   resources :comments
   resources :actors
@@ -80,6 +81,7 @@ end
 resources :users do
   resources :movie_overrides
   resources :movie_prefs
+  resources :movies
 end
 
 #resources :movie_prefs

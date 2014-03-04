@@ -80,6 +80,13 @@ def destroy
   redirect_to '/movies'
 end
 
+def userDestroy
+  @movie = Movie.find(params[:id])
+  #this deletes the movie only from the user's ownership, not the movie from the DB
+  current_user.movies.destroy(@movie)
+  redirect_to '/movies'
+end
+
 
   private
 
