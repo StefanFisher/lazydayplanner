@@ -43,7 +43,7 @@ class APISearchRottenTomatoes
 		DetailSearch(@imdb_id)
 
 		@genre = @detail_response['genres']
-		@directors = @detail_response['abridged_directors'][0]['name'] #only pulls first director
+		@directors = @detail_response['abridged_directors'][0]['name'][0] #only pulls first director
 
 		if @plot_simple == "" 
 			imdb_call = IMDBSearch(@title)
