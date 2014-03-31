@@ -22,9 +22,14 @@
  
   <% @actor.movies.each do |movie| %>
     <tr>
-      <td><%= movie.title %></td>
+      <td><%= link_to movie.title, movie_path(movie) %></td>
       <td><%= movie.year %></td>
-      <td><%= movie.genre_list %></td>
+      <td>
+        <% movie.genres.each do |genre| %>
+          <%=  link_to genre.genre, genre_path(genre.id) %>
+          <%= "," unless genre == movie.genres.last %>
+        <% end %>
+      </td>
       <td><%= @actor.roles.find_by(:movie=>movie.title).full unless @actor.roles.find_by(:movie=>movie.title).nil? %></td>
       <td><%= movie.plot_simple %></td>
       <td><%= link_to 'Show', movie %></td>

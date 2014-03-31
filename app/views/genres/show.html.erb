@@ -22,9 +22,14 @@
  
   <% @genre.movies.joins(:users).where("users.id" => current_user.id).each do |movie| %>
     <tr>
-      <td><%= movie.title %></td>
+      <td><%= link_to movie.title, movie_path(movie) %></td>
       <td><%= movie.year %></td>
-      <td><%= movie.genre_list %></td>
+      <td>
+        <% movie.genres.each do |genre| %>
+          <%=  link_to genre.genre, genre_path(genre.id) %>
+          <%= "," unless genre == movie.genres.last %>
+        <% end %>
+      </td>
       <td><%= movie.plot_simple %></td>
       <td><%= link_to 'Show', movie %></td>
       <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
