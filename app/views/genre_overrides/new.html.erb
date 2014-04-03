@@ -1,0 +1,32 @@
+<h1> Form for Adding Genre Overrides</h1>
+
+<%= form_for @genre_override, url: {action:"create"} do |f| %>
+  <% if @genre_override.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@genre_override.errors.count, "error") %> prohibited
+      this movie from being saved:</h2>
+    <ul>
+    <% @genre_override.errors.full_messages.each do |x| %>
+      <li><%= x %></li>
+    <% end %>
+    </ul>
+  </div>
+  <% end %>
+
+  <%= f.hidden_field :genre_id, :value => @genre.id %>
+  <%= f.hidden_field :user_id, :value => current_user.id %>
+
+  <p>
+    <%= f.label :genre %><br>
+    <%= f.text_field :genre, :value => @genre.genre  %>
+  </p>
+
+   <p>
+    <%= f.label :description %><br>
+    <%= f.text_field :description, :value => @genre.description %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

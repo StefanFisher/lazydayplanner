@@ -79,9 +79,18 @@ resources :genres do
 end
 
 resources :users do
+  resources :genre_overrides
   resources :movie_overrides
   resources :movie_prefs
   resources :movies
+end
+
+resources :genre_overrides do
+  resources :movie_overrides
+end
+
+resources :movie_overrides do
+  resources :genre_overrides
 end
 
 #resources :movie_prefs

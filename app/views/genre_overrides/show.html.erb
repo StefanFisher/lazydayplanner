@@ -1,0 +1,42 @@
+<h1> Genre Override<%= @genre_override.id %></h1>
+
+<p><b>Genre ID:</b> <%= @genre_override.id %></p>
+<p><b>Genre:</b> <%= @genre_override.genre %></p>
+<p><b>Genre Count:</b></p>
+<p><b>Description:</b> <%= @genre_override.description %></p>
+
+<p><%= link_to "Look at Movies", '/movies' %></p>
+<p><%= link_to "Add a Movie", new_movie_path %></p>
+<p><%= link_to "Look at Actors", actors_path %></p>
+<p><%= link_to "Look at genres ", genres_path %></p>
+
+<h2>Movies</h2>
+
+<table border="1">
+  <tr>
+    <th>Title</th>
+    <th>Year</th>
+    <th>Genre</th>
+    <th>Plot</th>
+  </tr>
+<% @genre_override.movie_overrides.each do |movie| %>
+  <tr>
+      <td><%= link_to movie.title, movie_path(movie.movie_id) %></td>
+      <td><%= movie.year %></td>
+      <td>
+        <% Movie.find(movie.movie_id).genres.each do |genre| %>
+        <% if genre.id != @genre_override.genre_id %>
+          <%=  link_to genre.genre, genre_path(genre.id) %>
+          <% else %>
+          	<%= link_to @genre_override.genre, genre_override_path(@genre_override.id) %>
+          <% end %>
+          <%= "," unless genre == Movie.find(movie.movie_id).genres.last %>
+        <% end %>
+      </td>
+      <td><%= movie.plot_simple %></td>
+      <td><%= link_to 'Show', movie %></td>
+      <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
+    </tr>
+ <% end %>
+
+</table>

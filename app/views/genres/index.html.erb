@@ -15,13 +15,27 @@
   </tr>
 
     <% @genres.each do |genre| %>
+      <% if @override.exists?(:genre_id => genre.id) %>
+      <% x = @override.find_by(:genre_id => genre.id) %>
+        <tr>
+        <td><%= x.id %></td>
+        <td><%= link_to x.genre, user_genre_override_path(:user_id=> current_user.id, :id => x.id) %></td>
+        <td></td>
+        <!-- <td><%= genre.movies.joins(:users).where("users.id" => current_user.id).count %></td> -->
+        <td><%= x.description %></td>
+        <td><%= link_to 'Show', genre %></td>
+        <td><%= link_to 'Edit', edit_user_movie_override_path(:user_id => current_user.id, :id => x.id) %></td>
+      </tr>
+      <% else %>
+
       <tr>
         <td><%= genre.id %></td>
         <td><%= link_to genre.genre, genre_path(genre.id) %></td>
         <td><%= genre.movies.joins(:users).where("users.id" => current_user.id).count %></td>
         <td><%= genre.description %></td>
         <td><%= link_to 'Show', genre %></td>
+        <td><%= link_to 'Override', new_user_genre_override_path(:user_id => current_user.id, :id => genre.id) %></td>
       </tr>
     <% end %>
-
+    <% end %>
 </table>

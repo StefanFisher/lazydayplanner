@@ -7,4 +7,5 @@ class User < ActiveRecord::Base
   has_and_belongs_to_many :movies
   has_many :movie_overrides, dependent: :destroy
   has_many :movie_prefs, dependent: :destroy
+  has_many :genre_overrides, dependent: :destroy
 end
