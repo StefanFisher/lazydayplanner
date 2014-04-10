@@ -7,7 +7,7 @@
 <p><b>Actors:</b> 
 	<% @real_movie.actors.each do |actor| %>
 		<%= link_to actor.full, actor_path(actor.id) %>
-		<span class="role"><%= actor.roles.map{ |role| role.full  }.join(", ") %> </span>
+		<span class="role"><%= actor.roles.where(:movie=>@real_movie.title).map{ |role| role.full}.join(", ") %> </span>
 		<%= "," unless actor == @real_movie.actors.last %>
 	<% end %>
 </p>
