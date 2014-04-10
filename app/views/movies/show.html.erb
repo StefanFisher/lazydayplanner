@@ -8,15 +8,23 @@
 	<% @real_movie.actors.each do |actor| %>
 		<%= link_to actor.full, actor_path(actor.id) %>
 		<span class="role"><%= actor.roles.where(:movie=>@real_movie.title).map{ |role| role.full}.join(", ") %> </span>
-		<%= "," unless actor == @real_movie.actors.last %>
+		<%="," unless actor == @real_movie.actors.last %>
 	<% end %>
 </p>
 <p><b>Directors:</b> <%= @movie.directors %></p>
 <p><b>Film Location:</b> <%= @movie.film_location %></p>
 <p><b>Genre:</b>
 	<% @real_movie.genres.each do |genre| %>
-	<%=  link_to genre.genre, genre_path(genre.id) %>
-	<%= "," unless genre == @real_movie.genres.last %>
+	<% if @movie.respond_to?(:genre_overrides) %>
+		<% if @movie.genre_overrides.exists?(:genre_id=>genre.id) %>
+			<%=  link_to GenreOverride.find_by(:genre_id=>genre.id).genre, genre_override_path(GenreOverride.find_by(:genre_id=>genre.id).id) %>
+		<%else%>
+			<%=  link_to genre.genre, genre_path(genre.id) %>
+		<%end%>
+	<%else%>
+		<%=  link_to genre.genre, genre_path(genre.id) %>
+	<%end%>
+	<%="," unless genre == @real_movie.genres.last %>
 	<% end %>
 </p>
 <p><b>Rated:</b> <%= @movie.rated %></p>

@@ -14,8 +14,16 @@
       <td><%= x.year %></td>
       <td>
         <% movie.genres.each do |genre| %>
-          <%=  link_to genre.genre, genre_path(genre.id) %>
-          <%= "," unless genre == movie.genres.last %>
+          <% if x.respond_to?(:genre_overrides) %>
+            <% if x.genre_overrides.exists?(:genre_id=>genre.id) %>
+              <%=  link_to GenreOverride.find_by(:genre_id=>genre.id).genre, genre_override_path(GenreOverride.find_by(:genre_id=>genre.id).id) %>
+            <%else%>
+              <%=  link_to genre.genre, genre_path(genre.id) %>
+            <%end%>
+          <%else%>
+            <%=  link_to genre.genre, genre_path(genre.id) %>
+          <%end%>
+          <%="," unless genre == movie.genres.last %>
         <% end %>
       </td>
       <td><%= x.plot_simple %></td>
