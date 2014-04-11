@@ -21,16 +21,17 @@
   </tr>
 <% @genre_override.movie_overrides.each do |movie| %>
   <tr>
+      <% @movie = Movie.find(movie.movie_id) %>
       <td><%= link_to movie.title, movie_path(movie.movie_id) %></td>
       <td><%= movie.year %></td>
       <td>
-        <% Movie.find(movie.movie_id).genres.each do |genre| %>
+        <% @movie.genres.each do |genre| %>
         <% if genre.id != @genre_override.genre_id %>
           <%=  link_to genre.genre, genre_path(genre.id) %>
           <% else %>
           	<%= link_to @genre_override.genre, genre_override_path(@genre_override.id) %>
           <% end %>
-          <%= "," unless genre == Movie.find(movie.movie_id).genres.last %>
+          <%= "," unless genre == @movie.genres.last %>
         <% end %>
       </td>
       <td><%= movie.plot_simple %></td>

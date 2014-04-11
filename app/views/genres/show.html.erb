@@ -20,47 +20,35 @@
     <th>Plot</th>
   </tr>
  
-  <% @genre.movies.joins(:users).where("users.id" => current_user.id).each do |movie| %>
-    <% if @movies.exists?(:movie_id => movie.id) %>
-    <% @stefan = @movies.find_by(:movie_id => movie.id) %>
+  <% @genre.movies.each do |movie| %>
       <tr>
-        <td><%= link_to @stefan.title, movie_path(@stefan.movie_id) %></td>
-        <td><%= @stefan.year %></td>
+        <td><%= link_to movie.title, movie_path(movie.id) %></td>
+        <td><%= movie.year %></td>
         <td>
           <% movie.genres.each do |genre| %>
-            <% if @overrides.exists?(:genre_id => genre.id) %>
-            <% brent = @overrides.find_by(:genre_id => genre.id) %>
-              <%=  link_to brent.genre, genre_override_path(@overrides.find_by(:genre_id => genre.id))%>
-            <% else %>
-              <%= link_to genre.genre, genre_path(genre.id)%>
-            <% end %>
-          <%= "," unless genre == movie.genres.last %>
-          <% end %>
+          <% if MovieOverride.exists?(:movie_id=>movie.id) %>
+            <% @brent = MovieOverride.find_by(:movie_id=>movie.id) %>
+            <% if @brent.respond_to?(:genre_overrides) %>
+            <% if @brent.genre_overrides.exists?(:genre_id=>genre.id) %>
+              <%=  link_to GenreOverride.find_by(:genre_id=>genre.id).genre, genre_override_path(GenreOverride.find_by(:genre_id=>genre.id).id) %>
+            <%else%>
+              <%=  link_to genre.genre, genre_path(genre.id) %>
+            <%end%>
+          <%else%>
+            <%=  link_to genre.genre, genre_path(genre.id) %>
+          <%end%>
+          <%else%>
+            <%=  link_to genre.genre, genre_path(genre.id) %>
+          <%end%>
+          <%="," unless genre == movie.genres.last %>
+        <% end %>
         </td>
         <td><%= movie.plot_simple %></td>
         <td><%= link_to 'Show', movie %></td>
         <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
       </tr>
 
-      <% else %>
-      <tr>
-        <td><%= link_to movie.title, movie_path(movie) %></td>
-        <td><%= movie.year %></td>
-        <td>
-          <% movie.genres.each do |genre| %>
-            <% if @overrides.exists?(:genre_id => genre.id) %>
-              <%=  link_to @overrides.find_by(:genre_id => genre.id), genre_override_path(@overrides.find_by(:genre_id => genre.id))%>
-            <% else %>
-              <%= link_to genre.genre, genre_path(genre.id)%>
-            <% end %>
-          <%= "," unless genre == movie.genres.last %>
-          <% end %>
-        </td>
-        <td><%= movie.plot_simple %></td>
-        <td><%= link_to 'Show', movie %></td>
-        <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
-      </tr>
-      <% end %>
+      
 
   <% end %>
 </table>

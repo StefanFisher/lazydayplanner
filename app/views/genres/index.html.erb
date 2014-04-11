@@ -20,7 +20,7 @@
         <tr>
         <td><%= x.id %></td>
         <td><%= link_to x.genre, user_genre_override_path(:user_id=> current_user.id, :id => x.id) %></td>
-        <td></td>
+        <td><%= x.movie_overrides.count %></td>
         <!-- <td><%= genre.movies.joins(:users).where("users.id" => current_user.id).count %></td> -->
         <td><%= x.description %></td>
         <td><%= link_to 'Show', genre %></td>

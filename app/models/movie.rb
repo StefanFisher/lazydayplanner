@@ -1,6 +1,7 @@
 class Movie < ActiveRecord::Base
 	#movies have many comments (bulds the join) and comments are also destroyed when movies are destroyed
 	has_many :comments, dependent: :destroy
+	has_many :movie_overrides, dependent: :destroy
 	has_and_belongs_to_many :actors
 	has_and_belongs_to_many :genres
 	has_and_belongs_to_many :users

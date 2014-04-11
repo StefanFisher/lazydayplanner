@@ -10,7 +10,8 @@ class GenresController < ApplicationController
   		@overrides = current_user.genre_overrides
 
   		if @overrides.exists?(:genre_id => params[:id])
-  			@genre = @overrides.find_by(:genre_id => params[:id]) 
+  			@genre = @overrides.find_by(:genre_id => params[:id])
+        @movies = @genre.movie_overrides 
   		else
   			@genre = Genre.find(params[:id])
         @movies = current_user.movie_overrides
